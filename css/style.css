@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0)), center fixed no-repeat url(../img/pexels-lukas-942733.jpg);
+    background-size: cover;
+}
+
+
+nav{
+   
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(152, 104, 41, 0));
+     
+    
+}
+ul{
+display: grid;
+  list-style-type: none;
+  /* list-style-image: url(../img/coffee-icon.png); */
+ align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+li a{
+    
+   background-color: rgba(222, 184, 135, 0.589);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+li a:hover{
+    color: rgb(0, 0, 0);
+    
+    background-color: rgb(255, 255, 255);
+}
+img{
+    width: 1.5vw;
+    
+}
+.container {
+    
+    padding: 10px;
+   display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows:  repeat(9, 1fr);
+
+    /* grid-template-rows: auto auto 1fr 1fr 1fr auto auto; */
+    grid-gap:10px;
+    height: calc(100vh);
+    
+   
+}
+
+.header {
+    
+    grid-area: 1 /1/ 1 /9;
+    
+}
+#one{
+    justify-self: center;
+  justify-self: start;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+#two{
+    grid-row:1/1;
+    grid-column:3/3;
+}
+#three{
+    grid-row:1/1;
+    grid-column:4/4;
+}
+#four{
+    grid-row: 1/1;
+    grid-column:7/8;
+}
+
+
+.wrapper {
+    grid-area: 3 / 4 / 8 / 9;
+}
+
+.wrapper h1{
+    
+    font-family:sans-serif;
+   color: rgb(0, 0, 0);
+   padding: 20px;
+   font-size: 80px;
+   margin: 0 auto;
+   width: 100%;
+  
+}
+/* .centered h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(rgba(173, 71, 71, 0.1), rgba(108, 50, 50, 0.1));
+    font-size: 7vw;
+} */
+
+
+.footer {
+    grid-area: 9/ 1 / 9 / 9;
+    background-color: rgba(61, 41, 8, 0);
+    
+}
+.footer q{
+    
+    display: block;
+    font-weight: 900;
+    font-size:1.3vw;
+    width: 80%;
+    margin: 0 auto;
+}
