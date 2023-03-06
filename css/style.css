@@ -32,8 +32,8 @@ ul {
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    font-size: 1.5vw;
-    margin: 10px;
+    font-size: 1.5rem;
+    
 }
 
 .dropdown {
@@ -61,19 +61,20 @@ ul {
 .dropdown-content {
     display: none;
     position:absolute;
-    bottom: -70px;
-   
-  margin: 15px;
-   
+    bottom: -9vh;
+    
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 .dropdown-content a {
   display:grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+
   }
 
   .dropdown-content a:hover {
-    background-color: #ddd;}
+    background-color: #ffffff;}
 
 
 .dropdown:hover .dropdown-content {
@@ -86,6 +87,7 @@ li a {
     color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
+    margin: 5px ;
 
 }
 
@@ -113,7 +115,10 @@ li a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/pexels-lukas-942733.jpg);
     background-size: cover;
 }
-
+.container-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-2.jpg);
+    background-size: cover;
+}
 .header {
 
     grid-area: 1 /1/ 1 /9;
@@ -126,6 +131,7 @@ li a:hover {
     left: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4vw;
+
 }
 
 #one {
@@ -138,17 +144,19 @@ li a:hover {
 #two {
     grid-row: 1/1;
     grid-column: 3/3;
+    padding: 20px 0;
 }
 
 #three {
     grid-row: 1/1;
     grid-column: 4/4;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 #four {
     grid-row: 1/1;
     grid-column: 6/6;
+    padding: 20px 0;
 }
 
 #five {
@@ -182,34 +190,66 @@ li a:hover {
 
 .buy {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr;
     display: grid;
-    grid-area: 4/4/3/3;
+   
+    grid-area: 3/3/4/5;
 }
 
 .wrapper-0 .buy h2 {
     display: grid;
-    grid-area: 1/1/3/4;
+    /* grid-area: 1/2/3/3; */
     font-size: 3vw;
     background-color: rgba(61, 41, 8, 0.863);
     color: beige;
     padding: 20px;
-    border-left: 10px solid burlywood;
+    border-left: 0.5vw solid rgb(232, 152, 47);
+    border-top: 10px solid rgb(232, 152, 47);
+    border-right: 5px solid rgb(232, 152, 47);
+    border-bottom: 5px solid rgb(232, 152, 47);
+
 }
 
-.wrapper-0 .buy h3 {
+.wrapper-0 .buy a {
     display: grid;
-    grid-area: 4/3/3/4;
+    grid-area: 3/1/4/3;
     justify-content: center;
     padding: 20px 0;
-    border: 3px solid rgb(212, 181, 76);
+    border: 7px solid rgb(67, 57, 25);
     background-color: rgb(61, 41, 15);
     color: beige;
     margin: 10px 0;
-    width;
+    text-decoration: none;
+    font-size: 1.5vw;
+
+}
+.wrapper-0 .buy #farmer-1{
+    display: grid;
+
+    height:100%;
+    max-width: 100%;
+    object-fit: cover;
+    grid-area: 1/3/3/2;
+    border-top:10px solid rgb(232, 152, 47);
+    border-right: 10px solid rgb(232, 152, 47);
+    border-bottom: 10px solid rgb(232, 152, 47);
+
 }
 
-.wrapper-0 .buy h3:hover {
+.wrapper-0 .buy #farmer-2{
+    display: grid;
+
+    grid-area: 2/1/2/2;
+    width: 100%;
+height: 100%;
+object-fit: cover;
+border-left: 10px solid rgb(232, 152, 47);
+border-bottom: 10px solid rgb(232, 152, 47);
+border-right: 5px solid rgb(232, 152, 47);
+}
+
+
+.wrapper-0 .buy a:hover {
     background-color: blanchedalmond;
     color: black;
 }
