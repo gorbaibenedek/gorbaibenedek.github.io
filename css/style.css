@@ -98,7 +98,7 @@ li a:hover {
 }
 
 .container {
-    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed  no-repeat url(../img/bg.jpg);
     background-size: cover;
 
     /* padding: 10px; */
