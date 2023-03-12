@@ -594,8 +594,28 @@ li a:hover {
     border: 6px solid burlywood;
 
     opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .anim {
+        animation-name: left-shift;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        position: relative;
+    }
+}
 
 
+@keyframes left-shift {
+    0% {
+        position: relative;
+        left: -600px;
+    }
+
+    100% {
+        position: relative;
+        left: 0;
+    }
 }
 
 .wrapper #p-2 {
@@ -650,7 +670,7 @@ li a:hover {
     background: linear-gradient(rgba(173, 71, 71, 0.1), rgba(108, 50, 50, 0.1));
     font-size: 7vw;
 } */
-.wrapper #p-4 {
+.wrapper .p-4 {
     background-color: rgb(61, 41, 8);
     color: beige;
     border: 2px solid burlywood;

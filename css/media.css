@@ -141,4 +141,8 @@
     .footer {
         margin: 0;
     }
+
+    .footer q {
+        font-size: unset;
+    }
 }
