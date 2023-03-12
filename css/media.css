@@ -10,8 +10,9 @@
         grid-area: 2/1/4/5;
         padding: 20px;
     }
+
     .wrapper-0 .buy h2,
-    .wrapper-0 .buy a{
+    .wrapper-0 .buy a {
         font-size: 10vw;
     }
 
@@ -23,33 +24,37 @@
         display: flex;
         position: fixed;
         flex-direction: ;
-        align-self:;
+        align-self: ;
         background-color: burlywood;
-        
+
     }
+
     .dropdown-21 {
-       
+
         background-color: rgb(33, 21, 4);
-        
+
     }
 
     /* .dropdown-content-2 {
         display: none;
     } */
-#mobile-nav{
-    width:max-content;
-    position: fixed;
-    top: 0;
-    right: 5px;
-    padding: 20px;
-}
-.header>li h2{
-    display: block;
-}
-.dropdown-2 .dropbtn-2 {
-display: block;}
+    #mobile-nav {
+        width: max-content;
+        position: fixed;
+        top: 0;
+        right: 5px;
+        padding: 20px;
+    }
 
-    .dropdown-2:hover .dropdown-content-2{
+    .header>li h2 {
+        display: block;
+    }
+
+    .dropdown-2 .dropbtn-2 {
+        display: block;
+    }
+
+    .dropdown-2:hover .dropdown-content-2 {
         display: inline;
         animation-delay: 2s;
     }
@@ -62,37 +67,61 @@ display: block;}
     .dropdown-content-21 {
         display: none;
         position: relative;
-        
-background-color: rgb(173, 151, 119);
+
+        background-color: rgb(173, 151, 119);
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-       
+
     }
-    .dropdown-content-21:hover{
+
+    .dropdown-content-21:hover {
         display: flex;
-        position:sticky;
+        position: sticky;
     }
+
     .dropdown-21:hover .dropdown-content-21 {
         display: block;
     }
-    #one,#two,#three,#four,#five{
+
+    /* .dropbtn-22 {
+        display: none;
+    } */
+    .dropdown-2:hover {
+        display: ;
+    }
+
+    #one,
+    #two,
+    #three,
+    #four,
+    #five {
         padding: 0;
         justify-content: start;
     }
-   #three{
-    display: block;
-    grid-row: 1/1;
-   
-   }
-  .dropdown-21{
-    
-  }
-.dropdown-content-2 li  a:hover{
-    transform: scale3d(1.1,1.1,1.1);
- 
-    
-    transition: 0.4s linear;
-animation-name: up;
-animation-duration: 0.8s;
-animation-fill-mode:forwards ;
-}
+
+    .three {
+        display: block;
+        grid-row: 1/1;
+
+    }
+
+    .dropdown-21 {}
+
+    .dropdown-content-2 li a:hover {
+        transform: scale3d(1.1, 1.1, 1.1);
+
+
+        transition: 0.4s linear;
+        animation-name: up;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+    }
+
+    /* *******************-INTERESTING FACTS******************* */
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper h1 {
+        padding: 20px 0;
+    }
 }

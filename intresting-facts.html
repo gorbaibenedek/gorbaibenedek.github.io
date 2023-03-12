@@ -6,21 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gorbai-Benedek kávézója">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="main.js">
     <title>Gorbai kávézó</title>
 </head>
 
 <body>
     <div class="container-1">
         <div class="header">
-            <nav>
-                <ul>
+            <li class="zero">
+                <h2>Kávé-világ</h2>
+            </li>
+
+            <ul id="mobile-nav" class="dropdown-2">
+                <li>
+                    <span class="dropbtn-2" id="a"><a href="#">MENU <i class="fa fa-bars"></i></a> </span>
+                    <span class="dropbtn-2" id="b"><a href="#">VISSZA <i class="fa fa-bars"></i></a> </span>
+                </li>
+
+
+                <div class="dropdown-content-2">
+
 
                     <!-- <li id="one"><img src="img/coffee-icon.png" alt="coffee"></li> -->
-                    <li id="one"><a href="index.html">Kezdőlap</a></li>
-                    <li id="two"><a href="#">A kávé eredete</a></li>
-                    <li id="three"><a href="#">Elkészítési módok</a></li>
-                    <li id="four"><a href="#">Kapcsolat</a></li>
+                    <li class="two"><a href="about.html">A kávé eredete</a></li>
+
+                    <ul class="dropdown-21" class="three">
+
+                        <li class="dropbtn-2"><a href="#">Elkészítési módok <i class="fa fa-caret-down"></i></a></li>
+
+
+                        <div class="dropdown-content-21">
+                            <li id=""><a href="#">KOTYOGÓS KÁVÉ</a></li>
+                            <li id=""><a href="#">INSTANT KÁVÉ</a></li>
+                        </div>
+
+                    </ul>
+
+                    <li class="four"><a href="intresting-facts.html">Érdekességek</a></li>
+                    <li class="five"><a href="contact.html">Kapcsolat</a></li>
+                </div>
+            </ul>
+            <nav>
+                <ul>
+                    <li class="zero">
+                        <h2>Kávé-világ</h2>
+                    </li>
+
+                    <li class="two"><a href="about.html">A kávé eredete</a></li>
+
+                    <ul class="dropdown" id="three">
+
+                        <li class="dropbtn"><a href="#">Elkészítési módok <i class="fa fa-caret-down"></i></a></li>
+
+
+                        <div class="dropdown-content">
+                            <li id=""><a href="#">KOTYOGÓS KÁVÉ</a></li>
+                            <li id=""><a href="#">INSTANT KÁVÉ</a></li>
+                        </div>
+
+                    </ul>
+
+                    <li class="four"><a href="intresting-facts.html">Érdekességek</a></li>
+                    <li class="five"><a href="contact.html">Kapcsolat</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,27 +93,27 @@
             <div id="p-2">
                 <img src="img/pexels-chevanon-photography-302905.jpg" alt="">
                 <h2>A KÁVÉ VÉDI A MÁJADAT</h2>
-                <p> 
+                <p>
                     A máj egy csodálatos szerv, amely több száz fontos funkciót lát el. Érdekes, hogy akik napi 4 vagy
                     akár több kávét isznak meg, náluk jelentősen alacsonyabb májproblémák kialakulásának az esélye.</p>
             </div>
             <div id="p-3">
                 <img src="img/pexels-samer-daboul-1627933.jpg" alt="">
-            
-            <h2>A KÁVÉTÓL INTELLIGENSEBB LESZEL</h2>
-            <p>
-                A kávéban található koffein serkenti az agyadat. A koffein blokkolja a gátló neurotranszmitter
-                adenozint, emitt megnő a többi neurontranszmitter száma, eközben megnő a noradrenalin és a dopamin
-                mennyisége, ami miatt gyorsabban fogsz tudni gondolkodni.</p>
+
+                <h2>A KÁVÉTÓL INTELLIGENSEBB LESZEL</h2>
+                <p>
+                    A kávéban található koffein serkenti az agyadat. A koffein blokkolja a gátló neurotranszmitter
+                    adenozint, emitt megnő a többi neurontranszmitter száma, eközben megnő a noradrenalin és a dopamin
+                    mennyisége, ami miatt gyorsabban fogsz tudni gondolkodni.</p>
             </div>
             <div id="p-4">
                 <img src="img/pexels-samer-daboul-1627933.jpg" alt="">
-            
-            <h2>A KÁVÉTÓL INTELLIGENSEBB LESZEL</h2>
-            <p>
-                A kávéban található koffein serkenti az agyadat. A koffein blokkolja a gátló neurotranszmitter
-                adenozint, emitt megnő a többi neurontranszmitter száma, eközben megnő a noradrenalin és a dopamin
-                mennyisége, ami miatt gyorsabban fogsz tudni gondolkodni.</p>
+
+                <h2>A KÁVÉTÓL INTELLIGENSEBB LESZEL</h2>
+                <p>
+                    A kávéban található koffein serkenti az agyadat. A koffein blokkolja a gátló neurotranszmitter
+                    adenozint, emitt megnő a többi neurontranszmitter száma, eközben megnő a noradrenalin és a dopamin
+                    mennyisége, ami miatt gyorsabban fogsz tudni gondolkodni.</p>
             </div>
         </div>
 
@@ -74,6 +124,8 @@
                 magukba.</q>
         </div>
     </div>
+
+
 </body>
 
 </html>

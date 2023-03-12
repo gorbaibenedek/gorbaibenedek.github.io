@@ -15,7 +15,7 @@ html {
 
 nav {
     display: grid;
-    padding: 0 20px;
+
     background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555));
     position: fixed;
     top: 0;
@@ -24,25 +24,27 @@ nav {
 
 ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     list-style-type: none;
     /* list-style-image: url(../img/coffee-icon.png); */
     align-items: center;
     margin: 0 auto;
     width: 100%;
     font-size: 1.5rem;
+    justify-content: end;
 
 }
 
-#zero {
+.zero {
     display: grid;
     grid-area: 1/1/4/4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
+    font-size: 3vw;
 
 }
 
-#one {
+.one {
     justify-self: center;
     justify-self: start;
     grid-row-start: 1;
@@ -50,12 +52,11 @@ ul {
     justify-content: end;
 }
 
-#two {
+.two {
     display: flex;
     grid-row: 1/1;
     grid-column: 4/4;
-    padding: 20px 0;
-    justify-content: end;
+
 
 }
 
@@ -65,16 +66,17 @@ ul {
     grid-row: 1/1;
     grid-column: 5/5;
     padding: 20px 0;
+
 }
 
-#four {
+.four {
     display: flex;
     grid-row: 1/1;
     grid-column: 6/6;
     /* padding: 20px 0; */
 }
 
-#five {
+.five {
     display: flex;
     grid-row: 1/1;
     grid-column: 7/8;
@@ -83,8 +85,9 @@ ul {
 
 
 .dropdown {
+    /* width:fit-content;
+     */
 
-    overflow: hidden;
 }
 
 .dropdown .dropbtn {
@@ -105,14 +108,19 @@ ul {
 .dropdown-content {
     display: none;
     position: absolute;
-    
+
 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
+/* .dropdown-content:hover{
+    display: flex;
+    position:sticky;
+} */
 .dropdown-content a {
-    display: grid;
+    display: block;
+
     /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; */
 
@@ -125,20 +133,54 @@ ul {
 
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
+
+.dropdown:hover:after .dropdown-content {
+    display: none;
+
+}
+
+#mobile-nav:hover span#b:hover {
+    display: none;
+}
+
+#mobile-nav:hover span#b {
+    transition-delay: 1s;
+}
+
+#mobile-nav span#a {
+    display: inline;
+}
+
+#mobile-nav:hover span#a {
+    display: none;
+}
+
+#mobile-nav span#b {
+    display: none;
+
+}
+
+#mobile-nav:hover span#b {
+    display: inline;
+}
+
 /* ******mobile******* */
 .dropdown-2 {
 
     overflow: hidden;
 }
-.header> li h2{
+
+.header>li h2 {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
 }
+
 .dropdown-2 .dropbtn-2 {
-display: none;
+    display: none;
     border: none;
     outline: none;
 
@@ -149,6 +191,7 @@ display: none;
     margin: 0;
     /* Important for vertical align on mobile phones */
 }
+
 .dropdown-content-2 {
     display: none;
     /* position: relative;
@@ -157,6 +200,7 @@ display: none;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1; */
 }
+
 .dropdown-content-2 a {
     display: block;
     /* grid-template-columns: 1fr 1fr;
@@ -178,32 +222,43 @@ li a {
     margin: 5px;
 
 }
-li #zero:hover{
+
+li #zero:hover {
     animation: none;
 }
 
-li:hover{
 
 
+.two li a,
+.three li a,
+.four li a,
+.five li a:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.4s linear;
+    animation-name: up;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 
 }
-  li a:hover {
-    transform: scale3d(1.1,1.1,1.1);
- 
-    
-            transition: 0.4s linear;
-animation-name: up;
-animation-duration: 0.8s;
-animation-fill-mode:forwards ;
+
+li a:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+
+
+    transition: 0.4s linear;
+    animation-name: up;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 
 }
 
 @keyframes up {
-    from{
+    from {
         background-color: #ffffff;
 
     }
-    to{
+
+    to {
         background-color: whitesmoke;
         color: black;
     }
@@ -232,10 +287,11 @@ animation-fill-mode:forwards ;
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-2.jpg);
     background-size: cover;
 }
+
 .container-3 {
     background: linear-gradient(rgba(196, 183, 183, 0.217), rgba(232, 223, 223, 0.244)), fixed no-repeat url(../img/support.jpg);
     background-size: cover;
-    
+
 }
 
 .header {
@@ -424,10 +480,10 @@ animation-fill-mode:forwards ;
     background-color: rgba(61, 41, 8, 0.863);
     color: beige;
     padding: 20px;
-    border-left: 0.5vw solid rgb(232, 152, 47);
-    border-top: 10px solid rgb(232, 152, 47);
-    border-right: 5px solid rgb(232, 152, 47);
-    border-bottom: 5px solid rgb(232, 152, 47);
+    border-left: 5px solid rgb(232, 152, 47);
+    border-top: 5px solid rgb(232, 152, 47);
+    border-right: 3px solid rgb(232, 152, 47);
+    border-bottom: 3px solid rgb(232, 152, 47);
 
 }
 
@@ -452,9 +508,9 @@ animation-fill-mode:forwards ;
     width: 100%;
     object-fit: cover;
     grid-area: 1/3/3/2;
-    border-top: 10px solid rgb(232, 152, 47);
-    border-right: 10px solid rgb(232, 152, 47);
-    border-bottom: 10px solid rgb(232, 152, 47);
+    border-top: 5px solid rgb(232, 152, 47);
+    border-right: 5px solid rgb(232, 152, 47);
+    border-bottom: 5px solid rgb(232, 152, 47);
 
 }
 
@@ -465,8 +521,8 @@ animation-fill-mode:forwards ;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-left: 10px solid rgb(232, 152, 47);
-    border-bottom: 10px solid rgb(232, 152, 47);
+    border-left: 5px solid rgb(232, 152, 47);
+    border-bottom: 5px solid rgb(232, 152, 47);
     border-right: 5px solid rgb(232, 152, 47);
 }
 
@@ -503,11 +559,11 @@ animation-fill-mode:forwards ;
 
 }
 
-#shakey:hover{
+#shakey:hover {
     animation: shake 1s;
     animation-iteration-count: infinite;
     animation-name: shake;
-    animation-duration:2s;
+    animation-duration: 2s;
     position: relative;
     transform: scaley(5);
 
@@ -656,10 +712,10 @@ fieldset {
     border-radius: 5px;
     text-align: center;
     color: rgb(55, 44, 12);
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     border-radius: 10px;
-    background-color:rgb(191, 162, 123);
+    background-color: rgb(191, 162, 123);
 
 
 }
@@ -706,7 +762,7 @@ input[type=submit] {
     margin: 0 auto;
     /* animation-name: contact;
     animation-duration: 2s; */
-   
+
 }
 
 #choose {
@@ -716,19 +772,23 @@ input[type=submit] {
     /* width: 40%; */
     max-inline-size: 100%;
 }
-fieldset:hover{
+
+fieldset:hover {
     animation-name: formy;
     animation-duration: 3.5s;
     position: relative;
 }
+
 @keyframes formy {
-    from{
+    from {
         background-color: #64621ade;
     }
-    to{
+
+    to {
         background-color: inherit;
     }
 }
+
 /* @keyframes contact {
     from {
         background-color: rgb(255, 255, 255);
@@ -760,24 +820,56 @@ fieldset:hover{
     }
 } */
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
 
-  input[type=submit]:hover {
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+input[type=submit]:hover {
     animation: shake 1s;
     animation-iteration-count: infinite;
     animation-name: shake;
-    animation-duration:2s;
+    animation-duration: 2s;
     position: relative;
     transform: scaley(5);
 
@@ -787,22 +879,24 @@ fieldset:hover{
 /* *******************************END****************************************** */
 
 /* ************************************SUPPORT****************************************** */
-.active>a{
+.active>a {
     background-color: rgb(38, 29, 17);
     color: aqua;
 }
+
 .wrapper-3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     column-gap: 10px;
-padding: 90px;
+    padding: 90px;
     display: grid;
     /* height:100vh; */
 }
+
 #middle-2 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  0.41fr 1fr 0.41fr;
+    grid-template-rows: 0.41fr 1fr 0.41fr;
     grid-area: 1/2/2/4;
 
 }
@@ -821,7 +915,10 @@ padding: 90px;
 
 }
 
-table,th ,tr,td{
+table,
+th,
+tr,
+td {
     /* display: table; */
     border: 1px solid rgb(48, 29, 5);
     /* width: 100%; */
@@ -830,26 +927,30 @@ table,th ,tr,td{
     padding: 20px;
     background-color: rgba(222, 184, 135, 0.427);
 }
-td{
+
+td {
     text-align: center;
 }
-#elkuld{
+
+#elkuld {
     display: inline;
 }
-th{
+
+th {
     font-size: 1.7em;
 }
-#first{
-   
-}
-    
-.support{
+
+#first {}
+
+.support {
     display: grid;
     grid-area: 2/2/2/4;
 }
-#form{
+
+#form {
     width: 100%;
 }
+
 .footer-0 {
     display: grid;
     align-items: center;
