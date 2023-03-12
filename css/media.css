@@ -1,6 +1,12 @@
 @media (max-width:600px) {
 
     /* *******************************INDEX*********************************** */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
         background-size: 100%;
     }
@@ -118,10 +124,21 @@
 
     /* *******************-INTERESTING FACTS******************* */
     .wrapper {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: 90px 20px;
+    }
+
+    .container-1 {
+        transform: translateZ(0px);
+        -webkit-transform-origin-z: 0;
     }
 
     .wrapper h1 {
         padding: 20px 0;
+    }
+
+    .footer {
+        margin: 0;
     }
 }
