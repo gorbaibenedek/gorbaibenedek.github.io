@@ -5,10 +5,12 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
 
     body {
         background-size: 100%;
+
     }
 
     .buy {
@@ -132,6 +134,19 @@
     .container-1 {
         transform: translateZ(0px);
         -webkit-transform-origin-z: 0;
+    }
+
+    @keyframes left-shift {
+
+        0% {
+            position: relative;
+            left: -600px;
+        }
+
+        100% {
+            position: relative;
+            left: 0;
+        }
     }
 
     .wrapper h1 {
