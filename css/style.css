@@ -114,10 +114,12 @@ ul {
     z-index: 1;
 }
 
-/* .dropdown-content:hover{
+
+.dropdown-content:hover {
     display: flex;
-    position:sticky;
-} */
+    position: sticky;
+}
+
 .dropdown-content a {
     display: block;
 
@@ -133,11 +135,6 @@ ul {
 
 .dropdown:hover .dropdown-content {
     display: block;
-
-}
-
-.dropdown:hover:after .dropdown-content {
-    display: none;
 
 }
 
