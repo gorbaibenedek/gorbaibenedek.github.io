@@ -139,7 +139,7 @@ ul {
 }
 
 #mobile-nav:hover span#b:hover {
-    display: none;
+    visibility: none;
 }
 
 #mobile-nav:hover span#b {
@@ -161,6 +161,11 @@ ul {
 
 #mobile-nav:hover span#b {
     display: inline;
+}
+
+#mobile-nav:hover span#b {
+    display: inline;
+
 }
 
 /* ******mobile******* */
@@ -191,11 +196,7 @@ ul {
 
 .dropdown-content-2 {
     display: none;
-    /* position: relative;
-    bottom: 1vh;
 
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1; */
 }
 
 .dropdown-content-2 a {
