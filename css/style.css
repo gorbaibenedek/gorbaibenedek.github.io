@@ -600,6 +600,7 @@ li a:hover {
     animation-duration: 2s;
     animation-iteration-count: 1;
     position: relative;
+
 }
 
 
@@ -669,9 +670,9 @@ li a:hover {
 }
 
 .wrapper .anim {
-    background-color: rgb(162, 121, 56);
+    /* background-color: rgb(162, 121, 56); */
     color: beige;
-    border: 2px solid burlywood;
+    /* border: 2px solid burlywood; */
     grid-area: 8/2/8/2;
     display: flex;
     flex-wrap: wrap;
