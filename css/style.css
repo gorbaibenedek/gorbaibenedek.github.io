@@ -139,7 +139,7 @@ ul {
 }
 
 #mobile-nav:hover span#b:hover {
-    visibility: none;
+    display: none;
 }
 
 #mobile-nav:hover span#b {
