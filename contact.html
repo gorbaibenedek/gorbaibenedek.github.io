@@ -9,18 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="main.js" defer></script>
     <title>Gorbai kávézó</title>
 </head>
 
 <body>
     <div class="container-2">
         <div class="header">
-            <li class="zero">
+            <!-- <li class="zero">
                 <h2>Kávé-világ</h2>
-            </li>
-            <ul id="mobile-nav" class="dropdown-2">
-                <li class="dropbtn-2"><a href="#">MENU <i class="fa fa-bars"></i></a></li>
-                <div class="dropdown-content-2">
+            </li> -->
+
+            <ul id="mobile-nav" class="dropdown-2 ">
+
+                <li class="nav-menu">
+                    <button id="tap">
+                        <span class="dropbtn-2" id="a"> <a href="#"> <i class="fa fa-bars"></i></a>
+                        </span>
+                    </button>
+                    <!-- <span class="dropbtn-2" id="b"><a href="#">VISSZA <i class="fa fa-bars"></i></a>
+                    </span> -->
+                </li>
+
+
+                <div class="dropdown-content-2" style="display: none;">
 
 
                     <!-- <li id="one"><img src="img/coffee-icon.png" alt="coffee"></li> -->
@@ -28,12 +40,12 @@
 
                     <ul class="dropdown-21" class="three">
 
-                        <li class="dropbtn-2"><a href="#">Elkészítési módok <i class="fa fa-caret-down"></i></a></li>
+                        <li class="dropbtn-2"><a href="#">Termelői kávéink <i class="fa fa-caret-down"></i></a></li>
 
 
                         <div class="dropdown-content-21">
-                            <li id=""><a href="#">KOTYOGÓS KÁVÉ</a></li>
-                            <li id=""><a href="#">INSTANT KÁVÉ</a></li>
+                            <li id=""><a href="african.html">Afrikai</a></li>
+                            <li id=""><a href="#"></a></li>
                         </div>
 
                     </ul>
@@ -52,11 +64,11 @@
 
                     <ul class="dropdown" id="three">
 
-                        <li class="dropbtn"><a href="#">Elkészítési módok <i class="fa fa-caret-down"></i></a></li>
+                        <li class="dropbtn"><a href="#">Termelői kávéink<i class="fa fa-caret-down"></i></a></li>
 
 
                         <div class="dropdown-content">
-                            <li id=""><a href="#">KOTYOGÓS KÁVÉ</a></li>
+                            <li id=""><a href="african.html">Afrikai</a></li>
                             <li id=""><a href="#">INSTANT KÁVÉ</a></li>
                         </div>
 
@@ -101,29 +113,41 @@
                                 <input type="password" name="jelszo" id="password" placeholder="***********"
                                     required></label>
                         </div>
+                        <div class="fav">
+                            <label for="coffee" id="fav">Válassza ki kedvenc kávéját!</label>
+                            <div id="choose">
+                                <label for="Espresso">Espresso
+                                    <input type="checkbox" name="Espresso" id="coffee"></label>
+                                <label for="Lungo">Lungo
+                                    <input type="checkbox" name="Lungo" id="coffee"></label>
+                                <label for="Cappuccino">Cappuccino
+                                    <input type="checkbox" name="Cappuccino" id="coffee"></label>
+                                <label for="Flat-white">Flat-white
+                                    <input type="checkbox" name="Flat-white" id="coffee"></label>
+                            </div>
 
-                        <label for="coffee" id="fav">Válassza ki kedvenc kávéját!</label>
-                        <div id="choose">
-                            <label for="Espresso">Espresso
-                                <input type="checkbox" name="Espresso" id="coffee"></label>
-                            <label for="Lungo">Lungo
-                                <input type="checkbox" name="Lungo" id="coffee"></label>
-                            <label for="Cappuccino">Cappuccino
-                                <input type="checkbox" name="Cappuccino" id="coffee"></label>
-                            <label for="Flat-white">Flat-white
-                                <input type="checkbox" name="Flat-white" id="coffee"></label>
                         </div>
-                        <input type="submit">
+                        <div class="submit">
+                            <input type="submit">
+                        </div>
                     </fieldset>
                 </form>
             </div>
         </div>
         <div class="footer">
-
-            <q>Látszólag csak kávéznak az emberek. De nem. Mert a kávé mellett egymás szemébe néznek, beszélgetnek,
-                ötletek születnek, barátságok, szerelmek szövődnek. És a falak embertörténetek ezreit szívják
-                magukba.</q>
-
+            <div class="quote">
+                <q>Látszólag csak kávéznak az emberek. De nem. Mert a kávé mellett egymás szemébe néznek, beszélgetnek,
+                    ötletek születnek, barátságok, szerelmek szövődnek. És a falak embertörténetek ezreit szívják
+                    magukba.</q>
+            </div>
+            <div class="social">
+                <ul id="footer">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook-48.png"
+                                alt=""></a> </li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a> </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt=""></a> </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

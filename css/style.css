@@ -18,7 +18,9 @@ nav {
 
     background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555));
     position: fixed;
+    z-index: 1;
     top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -82,7 +84,13 @@ ul {
     grid-column: 7/8;
 }
 
-
+.one,
+.two li a,
+.three li a,
+.four li a,
+.five {
+    /* background-color: antiquewhite; */
+}
 
 .dropdown {
     /* width:fit-content;
@@ -111,14 +119,14 @@ ul {
 
 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+
 }
 
 
-.dropdown-content:hover {
+/* .dropdown-content:hover {
     display: flex;
     position: sticky;
-}
+} */
 
 .dropdown-content a {
     display: block;
@@ -138,9 +146,9 @@ ul {
 
 }
 
-#mobile-nav:hover span#b:hover {
+/* #mobile-nav:hover span#b:hover {
     display: none;
-}
+} */
 
 #mobile-nav:hover span#b {
     transition-delay: 1s;
@@ -150,36 +158,35 @@ ul {
     display: inline;
 }
 
-#mobile-nav:hover span#a {
+/* #mobile-nav:hover span#a {
     display: none;
-}
+} */
 
 #mobile-nav span#b {
     display: none;
 
 }
 
-#mobile-nav:hover span#b {
+/* #mobile-nav:hover span#b {
     display: inline;
-}
+} */
 
-#mobile-nav:hover span#b {
-    display: inline;
 
-}
 
 /* ******mobile******* */
 .dropdown-2 {
-
+    position: fixed;
+    z-index: 1;
+    top: 0;
     overflow: hidden;
 }
 
-.header>li h2 {
+/* .header>li h2 {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-}
+} */
 
 .dropdown-2 .dropbtn-2 {
     display: none;
@@ -210,9 +217,18 @@ ul {
     display: block;
 }
 
-li a {
+button {
+    font-size: 1.5rem;
+    padding: 20px;
+    display: none;
+    border: 2px solid firebrick;
+    background-color: rgb(122, 71, 0);
+}
 
-    background-color: rgba(222, 184, 135, 0.589);
+li a,
+button {
+
+    background-color: rgb(60, 42, 33);
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -221,7 +237,9 @@ li a {
 
 }
 
-li #zero:hover {
+
+
+button:hover li #zero:hover {
     animation: none;
 }
 
@@ -230,7 +248,8 @@ li #zero:hover {
 .two li a,
 .three li a,
 .four li a,
-.five li a:hover {
+.five li a:hover,
+button:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.4s linear;
     animation-name: up;
@@ -277,6 +296,7 @@ li a:hover {
 }
 
 .container-1 {
+
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/pexels-lukas-942733.jpg);
     background-size: cover;
 }
@@ -722,7 +742,9 @@ li a:hover {
 }
 
 fieldset {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-inline-size: 100%;
     border: 3px solid rgb(195, 135, 57);
     font-size: 1.5em;
     margin: 0 auto;
@@ -761,11 +783,18 @@ input {
 }
 
 
+.submit {
+    display: grid;
+    width: 100%;
+    grid-area: 2/1/2/3;
+}
 
 input[type=submit] {
-    display: block;
+    display: flex;
     padding: 5px;
     margin: 0 auto;
+    width: 50%;
+    justify-content: center;
 }
 
 #fav {
@@ -773,15 +802,29 @@ input[type=submit] {
     font-size: 1.5em;
 }
 
+#datas {
+    display: flex;
+    flex-direction: column;
+}
+
 #datas label {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: min-content;
-    margin: 0 auto;
+    margin: 10px auto;
+    border: 2px solid rgb(61, 45, 7);
+    padding: 1px;
     /* animation-name: contact;
     animation-duration: 2s; */
 
+}
+
+.fav {
+    width: 80%;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #choose {
@@ -790,6 +833,7 @@ input[type=submit] {
     margin: 0 auto;
     /* width: 40%; */
     max-inline-size: 100%;
+    border: 2px solid rgb(61, 45, 7);
 }
 
 fieldset:hover {
@@ -976,7 +1020,7 @@ th {
     grid-template-columns: 1fr 1fr 1fr;
     ;
     grid-template-rows: 1fr;
-    margin-top: 100px;
+
     background-color: rgb(61, 41, 8);
     position: fixed;
     bottom: 0px;
@@ -988,7 +1032,7 @@ th {
 
     grid-area: 5/1/5/5;
     font-weight: 900;
-    font-size: 1.3vw;
+    font-size: 1.8rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -996,24 +1040,160 @@ th {
 
 .footer {
     display: grid;
+
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    ;
-    grid-template-rows: 1fr;
+    grid-template-columns: ;
+    grid-template-rows: 1fr 1.3fr;
+    background-color: azure;
 
-    background-color: rgb(61, 41, 8);
-    margin-top: 100px;
+    margin-bottom: 100px;
     color: beige;
+}
 
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quote {
+    grid-area: 1/1/1/4;
+    background-color: rgb(61, 41, 8);
+    font-weight: 900;
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.social {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    background-color: rgb(214, 186, 118);
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social li a {
+    display: flex;
+    background-color: rgba(84, 67, 16, 0.856);
+    padding: 0px;
+    opacity: 0.8;
+}
+
+.social li a:hover {
+    opacity: 1;
+}
+
+/* ********************************AFRICAN****************************************  */
+
+.grounded-pic {
+    list-style-type: none;
+
+}
+
+.grounded {
+    display: grid;
+}
+
+
+
+.grounded ul li {
+    display: grid;
+
+    background-color: rgba(213, 206, 163, 0.9);
+}
+
+.grounded-pic {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/grounded.jpg)fixed; */
+    /* background-image: url(../img/Header.jpg); */
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+
+    margin: 0 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2vw;
+    align-items: center;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#grid h2 {
+    display: grid;
+    grid-area: 2/1/2/1;
+}
+
+.grounded h2 {
+
+
+    font-size: 3em;
+    border-radius: 20px 20px 0 0;
+    /* background-color: rgba(1, 0, 0, 0.6); */
+    padding: 30px;
+    justify-content: center;
+    margin: 0 auto;
 
 
 }
 
-.footer q {
-    grid-area: 1/1/1/4;
+.grounded h2 {}
 
-    font-weight: 900;
-    font-size: 1.3vw;
-    width: 80%;
-    margin: 0 auto;
+.sidamo p,
+.nicaragua p {
+
+    display: grid;
+    text-align: left;
+    grid-area: 1/2/2/2;
+}
+
+.sidamo img,
+.yirgacheffe img,
+.nicaragua img,
+.injerto img {
+    width: 25vw;
+    max-inline-size: 100%;
+    block-size: auto;
+    border-radius: 10px;
+}
+
+.yirgacheffe img,
+.injerto img {
+    grid-area: 1/2/2/2;
+
+}
+
+
+.yirgacheffe p,
+.injerto p {
+    display: grid;
+    grid-area: 1/1/2/2;
+    text-align: left;
+}
+
+.sidamo,
+.yirgacheffe,
+.nicaragua,
+.injerto {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid rgb(26, 18, 11);
+
+}
+
+
+.added {
+    display: block;
+}
+
+.removed {
+    display: none;
 }

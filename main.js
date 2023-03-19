@@ -8,6 +8,33 @@
 // }
 // window.addEventListener('resize', widthChangeCallback);
 // widthChangeCallback();
+const toggleBtn = document.querySelector("#tap");
+const myDiv = document.querySelector(".dropdown-content-2 ");
+const myButtnA = document.querySelector("#a");
+const myButtnB = document.querySelector("#b");
+
+
+toggleBtn.addEventListener("click", () => {
+  if (myDiv.style.display === "none") {
+
+    myDiv.style.display = "block"
+    myDiv.style.padding = "100px 0"
+    toggleBtn.style.padding = "10px"
+    toggleBtn.innerHTML = `<a><i class="fa fa-bars"></i></a>`
+
+    // myButtnB.style.display = "block"
+
+
+  } else {
+
+    myDiv.style.display = "none"
+
+    toggleBtn.innerHTML = `<a><i
+      class="fa fa-bars"></i></a>`
+
+    // myDiv.style.display = "none"
+  }
+})
 
 
 let observer = new IntersectionObserver((entries) => {
@@ -25,8 +52,6 @@ let observer = new IntersectionObserver((entries) => {
 });
 if (window.innerWidth < 600) {
   observer.observe(document.querySelector(".p-4"));
-} else {
-  observer.observe(document.querySelector(".p-4"));
-
 }
+
 
