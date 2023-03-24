@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width:1000px) {
 
     /* *******************************INDEX*********************************** */
     * {
@@ -59,6 +59,7 @@
 
     #mobile-nav {
         /* width: max-content; */
+        background-color: rgb(214, 186, 118);
         position: fixed;
         top: 0;
         width: 100%;
@@ -190,6 +191,7 @@
 
     .footer q {
         font-size: unset;
+        margin-bottom: 400px;
     }
 
     /* *****************ABOUT*************************** */
@@ -209,6 +211,35 @@
         box-shadow: none;
     }
 
+    #spaced-evenly-1 p,
+    #spaced-evenly-0 p {
+        display: block;
+        overflow: scroll;
+        overflow-x: auto;
+        height: 200px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
     /* **************************CONTACT*****************  */
     #middle-1 h3 {
         padding: 20px 0;
@@ -217,6 +248,7 @@
     fieldset {
         width: 70%;
         display: block;
+        margin-bottom: 50px;
     }
 
     #middle-1 {
@@ -233,10 +265,101 @@
     .footer {
         margin-top: 20px;
     }
-}
 
-@media (min-width:600px) {
+
+    /* @media (min-width:600px) {
     .dropdown-content-2 {
         display: none !important
+    }
+} */
+    /* ****************************AFRICAN**********************  */
+
+    .capsules h2,
+    .grounded-pic h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .capsules-pic img {
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+    .vertuo p,
+    .original p {
+        width: 100%;
+    }
+
+    .capsules-pic ul,
+    p {
+        display: block;
+
+    }
+
+    .vertuo,
+    .original,
+    .compare {
+        border: 1px solid burlywood;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+
+    header h1 {
+        color: black;
+        background-color: inherit;
+    }
+
+    .african {
+        display: block;
+    }
+
+    .grounded ul li {
+        display: block;
+    }
+
+    .yirgacheffe img,
+    .sidamo img,
+    .nicaragua img,
+    .injerto img {
+
+        width: 100%;
+        max-inline-size: 100%;
+
+    }
+
+    .grounded-pic {
+        display: block;
+        font-size: 4vw;
+
+    }
+
+    .grounded-pic p {
+        text-align: center;
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    .wrapper {
+        align-items: center;
+    }
+
+    .wrapper h1 {
+        width: 50%;
+    }
+
+    .wrapper #p-1,
+    .wrapper #p-2,
+    .wrapper #p-3,
+    .anim {
+        width: 50%;
+
+    }
+
+    .p-4 {
+        justify-content: center;
     }
 }

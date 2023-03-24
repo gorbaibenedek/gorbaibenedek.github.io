@@ -67,7 +67,7 @@ ul {
     display: block;
     grid-row: 1/1;
     grid-column: 5/5;
-    padding: 20px 0;
+
 
 }
 
@@ -331,11 +331,11 @@ li a:hover {
 /* **************************ABOUT HTML********************************************/
 .wrapper-1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.3fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.3fr 0.4fr 0.6fr;
     column-gap: 10px;
 
     display: grid;
-    /* height:100vh; */
+    height: 100vh;
 }
 
 #middle {
@@ -349,6 +349,7 @@ li a:hover {
     color: beige;
     justify-content: center;
     display: grid;
+    border-radius: 10px;
     align-items: center;
     font-family: sans-serif;
     font-size: 4em;
@@ -357,7 +358,7 @@ li a:hover {
 #spaced-evenly-0 {
     background-color: rgba(61, 41, 8, 0.737);
     display: flex;
-    grid-area: 4/1/5/1;
+    grid-area: 4/2/5/2;
     box-shadow: 20px 10px 10px 10px;
     border-radius: 10px;
     margin: 0 20px;
@@ -368,18 +369,35 @@ li a:hover {
 }
 
 #spaced-evenly-0 p {
-    background-color: rgba(61, 41, 8, 0.737);
-    color: beige;
+    background-color: rgb(213, 206, 163);
+    color: rgb(26, 18, 11);
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-family: sans-serif;
     font-size: 1em;
     padding: 10px 20px;
     /* margin: 0 20px; */
     border-radius: 10px;
+    width: 100%;
+    /* animation-name: slide; */
+    animation-duration: 2s;
+}
+
+.option {
+    background-color: rgba(61, 41, 8, 0.737);
+    color: beige;
+    justify-content: center;
+    /* display: flex; */
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    /* margin: 0 20px; */
+    border-radius: 10px;
+    width: 100%;
     animation-name: slide;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 @keyframes slide {
@@ -393,7 +411,7 @@ li a:hover {
 
     0% {
         background-color: rgba(74, 61, 18, 0.295);
-        left: -500px;
+        left: -300px;
         top: 0px;
     }
 
@@ -407,7 +425,7 @@ li a:hover {
 #spaced-evenly-1 {
     background-color: rgba(61, 41, 8, 0.737);
     display: flex;
-    grid-area: 5/2/5/2;
+    grid-area: 4/3/5/3;
     box-shadow: 20px 10px 10px 10px;
     border-radius: 10px;
     margin: 0 20px;
@@ -419,8 +437,8 @@ li a:hover {
 }
 
 #spaced-evenly-1 p {
-    background-color: rgba(61, 41, 8, 0.737);
-    color: beige;
+    background-color: rgb(213, 206, 163);
+    color: rgb(26, 18, 11);
     justify-content: center;
     display: flex;
     align-items: center;
@@ -429,7 +447,7 @@ li a:hover {
     padding: 10px 20px;
     /* margin: 0 20px; */
     border-radius: 10px;
-    animation-name: slide-1;
+    /* animation-name: slide-1; */
     animation-duration: 4s;
 
 }
@@ -445,7 +463,8 @@ li a:hover {
 
     0% {
         background-color: rgba(210, 203, 194, 0.404);
-        top: 600px;
+        left: -500px;
+        top: 0px;
 
     }
 
@@ -580,9 +599,10 @@ li a:hover {
 
 #shakey:hover {
     animation: shake 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-name: shake;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
     position: relative;
     transform: scaley(5);
 
@@ -681,7 +701,7 @@ li a:hover {
 } */
 
 .wrapper .p-4 .anim {
-
+    margin: 10px;
     background-color: rgb(61, 41, 8);
 }
 
@@ -693,12 +713,12 @@ li a:hover {
 .wrapper .anim {
     /* background-color: rgb(162, 121, 56); */
     color: beige;
-    /* border: 2px solid burlywood; */
+    border: 2px solid burlywood;
     grid-area: 8/2/8/2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 10px;
+
     opacity: 1;
     text-align: center;
     font-weight: 800;
@@ -748,6 +768,7 @@ fieldset {
     border: 3px solid rgb(195, 135, 57);
     font-size: 1.5em;
     margin: 0 auto;
+
     width: 50%;
     padding: 30px 40px 0 40px;
     border-radius: 5px;
@@ -762,7 +783,8 @@ fieldset {
 }
 
 legend {
-    color: black;
+    color: whitesmoke;
+    background-color: rgb(60, 42, 33);
 }
 
 form {
@@ -778,15 +800,15 @@ label {
 }
 
 input {
-    /* width:fit-content; */
-    /* width: 120px; */
+    padding: 5px;
 }
 
 
 .submit {
     display: grid;
     width: 100%;
-    grid-area: 2/1/2/3;
+    grid-area: 3/1/3/3;
+    text-align: justify;
 }
 
 input[type=submit] {
@@ -797,13 +819,35 @@ input[type=submit] {
     justify-content: center;
 }
 
+input[type=button] {
+    display: flex;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: rgb(57, 49, 8);
+    justify-content: center;
+    color: white;
+}
+
+input[type=button]:hover {
+
+    color: rgb(57, 49, 8);
+    background: white;
+
+}
+
+.accept {
+    display: flex;
+    grid-area: 2/1/2/3;
+
+}
+
 #fav {
     color: black;
     font-size: 1.5em;
 }
 
 #datas {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -842,7 +886,7 @@ fieldset:hover {
     position: relative;
 }
 
-@keyframes formy {
+/* @keyframes formy {
     from {
         background-color: #64621ade;
     }
@@ -850,7 +894,7 @@ fieldset:hover {
     to {
         background-color: inherit;
     }
-}
+} */
 
 /* @keyframes contact {
     from {
@@ -893,6 +937,7 @@ fieldset:hover {
 
     20% {
         transform: translate(-3px, 0px) rotate(1deg);
+
     }
 
     30% {
@@ -925,6 +970,7 @@ fieldset:hover {
 
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+
     }
 }
 
@@ -1039,20 +1085,28 @@ th {
 
 
 .footer {
-    display: grid;
 
+    position: relative;
+    bottom: 58px;
     align-items: center;
     grid-template-columns: ;
-    grid-template-rows: 1fr 1.3fr;
+    /* grid-template-rows: 1fr 1.3fr; */
     background-color: azure;
 
     margin-bottom: 100px;
     color: beige;
 }
 
+.footer p {
+    color: black;
+    font-size: xx-large;
+    margin: 0 20px;
+}
+
 .footer ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .quote {
@@ -1148,10 +1202,11 @@ th {
 
 .sidamo p,
 .nicaragua p {
-
+    padding: 5px 20px;
     display: grid;
     text-align: left;
     grid-area: 1/2/2/2;
+    font-size: 1.4em;
 }
 
 .sidamo img,
@@ -1176,6 +1231,8 @@ th {
     display: grid;
     grid-area: 1/1/2/2;
     text-align: left;
+    padding: 5px 20px;
+    font-size: 1.4em;
 }
 
 .sidamo,

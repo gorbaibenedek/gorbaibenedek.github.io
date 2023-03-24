@@ -20,7 +20,7 @@ toggleBtn.addEventListener("click", () => {
     myDiv.style.display = "block"
     myDiv.style.padding = "100px 0"
     toggleBtn.style.padding = "10px"
-    toggleBtn.innerHTML = `<a><i class="fa fa-bars"></i></a>`
+    toggleBtn.innerHTML = `<a><i class="fa fa-close"></i></a>`
 
     // myButtnB.style.display = "block"
 
@@ -50,8 +50,16 @@ let observer = new IntersectionObserver((entries) => {
     }
   });
 });
+
+let submit = document.querySelector("#sub")
+
+submit.addEventListener("click", () => {
+  alert(`Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
+  Illetve, ha eddig nem tette, töltse ki a kötlelező mezőket!`)
+
+}
+)
 if (window.innerWidth < 600) {
   observer.observe(document.querySelector(".p-4"));
+  observer.observe(document.querySelector(".p-4").style.border = "none");
 }
-
-
