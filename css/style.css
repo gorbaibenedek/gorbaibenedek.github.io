@@ -296,10 +296,11 @@ button:hover li #zero:hover {
 
 
 
-.two li a:hover,
-.three li a:hover,
-.four li a:hover,
-.five li a:hover {
+.two a:hover,
+/* .three a:hover, */
+#three .dropdown-content-active a:hover,
+.four a:hover,
+.five a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.4s linear;
     animation-name: up;
@@ -308,7 +309,7 @@ button:hover li #zero:hover {
 
 }
 
-li>a:hover {
+/* li>a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
 
 
@@ -317,7 +318,7 @@ li>a:hover {
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
 
-}
+} */
 
 
 
