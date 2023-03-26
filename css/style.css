@@ -296,9 +296,9 @@ button:hover li #zero:hover {
 
 
 
-.two li a,
-.three li a,
-.four li a,
+.two li a:hover,
+.three li a:hover,
+.four li a:hover,
 .five li a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.4s linear;
@@ -308,7 +308,7 @@ button:hover li #zero:hover {
 
 }
 
-li a:hover {
+li>a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
 
 
@@ -318,6 +318,8 @@ li a:hover {
     animation-fill-mode: forwards;
 
 }
+
+
 
 @keyframes up {
     from {
