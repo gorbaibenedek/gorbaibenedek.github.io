@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="main.js" defer></script>
 
     <title>Gorbai kávézó</title>
 </head>
@@ -16,46 +17,14 @@
 <body>
     <div class="container-1">
         <div class="header">
-            <!-- <li class="zero">
-                <h2>Kávé-világ</h2>
-            </li> -->
 
-            <ul id="mobile-nav" class="dropdown-2 ">
-
-                <li class="nav-menu">
-                    <button id="tap">
-                        <span class="dropbtn-2" id="a"> <a href="#"> <i class="fa fa-bars"></i></a>
-                        </span>
-                    </button>
-                    <!-- <span class="dropbtn-2" id="b"><a href="#">VISSZA <i class="fa fa-bars"></i></a>
-                    </span> -->
-                </li>
-
-
-                <div class="dropdown-content-2" style="display: none;">
-
-
-                    <!-- <li id="one"><img src="img/coffee-icon.png" alt="coffee"></li> -->
-                    <li class="two"><a href="about.html">A kávé eredete</a></li>
-
-                    <ul class="dropdown-21" class="three">
-
-                        <li class="dropbtn-2"><a href="#">Termelői kávéink <i class="fa fa-caret-down"></i></a></li>
-
-
-                        <div class="dropdown-content-21">
-                            <li id=""><a href="#"></a></li>
-                            <li id=""><a href="#"></a></li>
-                        </div>
-
-                    </ul>
-
-                    <li class="four"><a href="intresting-facts.html">Érdekességek</a></li>
-                    <li class="five"><a href="contact.html">Kapcsolat</a></li>
+            <nav class="primary">
+                <div class="hamburger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
                 </div>
-            </ul>
-            <nav>
-                <ul>
+                <ul class="navitems">
                     <li class="zero">
                         <h2>Kávé-világ</h2>
                     </li>
@@ -64,12 +33,14 @@
 
                     <ul class="dropdown" id="three">
 
-                        <li class="dropbtn"><a href="#">Termelői kávéink<i class="fa fa-caret-down"></i></a></li>
+                        <li class="dropbtn"><button class="onc" id="drpBtn"> <a href="#">Termelői kávéink<i
+                                        class="fa fa-caret-down"></i></a>
+                        </li></button>
 
 
-                        <div class="dropdown-content">
+                        <div class="dropdown-content ">
                             <li id=""><a href="african.html">Afrikai</a></li>
-                            <li id=""><a href="#">INSTANT KÁVÉ</a></li>
+                            <li id=""><a href="#grid-1">Közép-Amerikai</a></li>
                         </div>
 
                     </ul>
@@ -79,8 +50,6 @@
                 </ul>
             </nav>
         </div>
-
-
 
 
         <div class="wrapper">
@@ -148,7 +117,6 @@
         </div>
     </div>
 
-    <script src="main.js"></script>
 </body>
 
 </html>
