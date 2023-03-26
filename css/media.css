@@ -197,6 +197,12 @@
         margin-top: 60px;
     }
 
+    #grid-1 h2,
+    #grid h2 {
+        font-size: 16vw;
+    }
+
+
     .dropdown-content-2>ul {
         display: inline;
         padding: 0;
@@ -429,7 +435,9 @@
     }
 
     .african {
-        display: block;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .grounded ul li {
@@ -446,9 +454,11 @@
 
     }
 
-    .grounded-pic {
-        display: block;
-        font-size: 4vw;
+    .yirgacheffe p,
+    .sidamo p,
+    .nicaragua p,
+    .injerto p {
+        font-size: 1em;
 
     }
 

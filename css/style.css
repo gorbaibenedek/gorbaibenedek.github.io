@@ -918,12 +918,11 @@ input[type=button]:hover {
     cursor: pointer;
 }
 
-.sum:hover {
-    font-size: large;
-}
+
+
 
 .fav {
-    width: 80%;
+
     margin: 0 30px;
     display: flex;
     flex-direction: column;
@@ -1222,6 +1221,7 @@ th {
     /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/grounded.jpg)fixed; */
     /* background-image: url(../img/Header.jpg); */
     display: grid;
+
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(0, 0, 0);
