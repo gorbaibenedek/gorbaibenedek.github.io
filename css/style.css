@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -12,16 +13,20 @@ html {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
 
-nav {
-    display: grid;
-
+.primary {
+    display: flex;
+    justify-content: space-between;
     background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555));
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
+    align-items: center;
 }
 
 ul {
@@ -30,21 +35,25 @@ ul {
     grid-template-rows: 1fr;
     column-gap: 0.5rem;
     list-style-type: none;
-    /* list-style-image: url(../img/coffee-icon.png); */
+
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
+
+
+
+
     font-size: 1.5rem;
     justify-content: end;
 
 }
 
 .zero {
-    display: grid;
-    grid-area: 1/1/4/4;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3vw;
 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.35em;
+}
+
+.zero a {
+    color: rgb(24, 21, 15);
 }
 
 .one {
@@ -53,6 +62,7 @@ ul {
     grid-row-start: 1;
     grid-column-start: 1;
     justify-content: end;
+
 
 }
 
@@ -93,6 +103,12 @@ ul {
     grid-row: 1/1;
     grid-column: 7/8;
     /* background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555)); */
+}
+
+.six {
+    display: flex;
+    grid-row: 1/1;
+    grid-column: 8/8;
 }
 
 .one,
@@ -300,7 +316,8 @@ button:hover li #zero:hover {
 /* .three a:hover, */
 #three .dropdown-content-active a:hover,
 .four a:hover,
-.five a:hover {
+.five a:hover,
+.six a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.4s linear;
     animation-name: up;
@@ -674,7 +691,7 @@ button:hover li #zero:hover {
 
     opacity: 1;
     text-align: center;
-    font-weight: 800;
+
 }
 
 .wrapper img {
@@ -711,7 +728,7 @@ button:hover li #zero:hover {
     margin: 10px;
     opacity: 1;
     text-align: center;
-    font-weight: 800;
+    /* font-weight: 800; */
 
 }
 
@@ -733,7 +750,7 @@ button:hover li #zero:hover {
     margin: 10px;
     opacity: 1;
     text-align: center;
-    font-weight: 800;
+    /* font-weight: 800; */
 
 
 }
@@ -774,7 +791,7 @@ button:hover li #zero:hover {
 
     opacity: 1;
     text-align: center;
-    font-weight: 800;
+    /* font-weight: 800; */
 
 }
 
@@ -840,19 +857,15 @@ legend {
     background-color: rgb(60, 42, 33);
 }
 
-form {
-    /* width: inherit;
-    display: block; */
-
-
-}
-
-label {
-    display: inline-block;
+#form label {
+    display: flex;
+    flex-direction: column;
     padding: 5px 0;
+    width: max-content;
+    margin: 0 auto;
 }
 
-input {
+#form input {
     padding: 5px;
 }
 
@@ -868,7 +881,7 @@ input[type=submit] {
     display: flex;
     padding: 5px;
     margin: 0 auto;
-    width: 50%;
+
     justify-content: center;
 }
 
@@ -1056,7 +1069,7 @@ input[type=submit]:hover {
 
 .wrapper-3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
     column-gap: 10px;
     padding: 90px;
     display: grid;
@@ -1100,6 +1113,16 @@ td {
 
 td {
     text-align: center;
+}
+
+
+
+#form-1 {
+    border: 2px solid rgb(41, 26, 8);
+    background-color: rgb(120, 87, 10);
+    color: rgb(254, 237, 204);
+    box-shadow: 2px 2px 2px 2px rgb(41, 26, 8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #elkuld {
@@ -1148,7 +1171,7 @@ th {
 .footer {
 
     position: relative;
-    bottom: 58px;
+    bottom: 48px;
     align-items: center;
     grid-template-columns: ;
     /* grid-template-rows: 1fr 1.3fr; */
@@ -1190,6 +1213,14 @@ th {
     margin: 0 auto;
 }
 
+.social ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .social li a {
     display: flex;
     background-color: rgba(84, 67, 16, 0.856);
@@ -1200,6 +1231,49 @@ th {
 .social li a:hover {
     opacity: 1;
 }
+
+input[type=radio] {
+    display: flex;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+
+
+    justify-content: center;
+}
+
+#form-1 p {
+    font-size: 1.5em;
+}
+
+#form-1 label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 10px;
+    width: max-content;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.op-5 {
+    position: absolute;
+    left: -100%;
+    width: 50%;
+    content: "Ft";
+    display: inline-block;
+    border-radius: 10px;
+    padding-block: 5px;
+}
+
+
+
+.op-5-active {
+    position: relative;
+    left: 0;
+}
+
 
 /* ********************************AFRICAN****************************************  */
 

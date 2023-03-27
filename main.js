@@ -1,3 +1,34 @@
+const custom = document.querySelector("#op-4")
+const required = document.querySelector("#op-5")
+const remove1 = document.querySelector("#op-1")
+const remove2 = document.querySelector("#op-2")
+const remove3 = document.querySelector("#op-3")
+const customA = document.querySelector(".op-5")
+const customB = document.querySelector(".op-5-active")
+
+if (custom, customA) {
+  custom.addEventListener("click", addCustom)
+}
+function addCustom() {
+  customA.classList.add("op-5-active")
+  required.required = true
+}
+
+if (custom, customA) {
+  // customA.addEventListener("click", removeCustom)
+  remove1.addEventListener("click", removeCustom)
+  remove2.addEventListener("click", removeCustom)
+  remove3.addEventListener("click", removeCustom)
+}
+
+function removeCustom() {
+  customA.classList.remove("op-5-active")
+  required.required = false
+}
+
+
+
+// NAVIGATION MENU BUTTON
 const navBtn = document.querySelector(".dropdown-content-active")
 const NavbtnNone = document.querySelector(".dropdown-content")
 const buttOn = document.querySelector(".onc")
@@ -13,7 +44,7 @@ function navActive() {
   // NavbtnNone.classList.remove("dropdown-content")
 }
 
-// Create the observer
+// ADDITIONAL INFOS FOR REGISTRATION
 let submit = document.querySelector("#sub")
 if (submit) {
   submit.addEventListener("click", () => {
@@ -24,7 +55,7 @@ if (submit) {
   }
   )
 }
-
+// HAMBURGER MENU ADDED
 const btn = document.querySelector(".hamburger")
 const mobileNav = document.querySelector(".navitems")
 const floatingBtn = document.querySelector(".floating-btn")
@@ -33,7 +64,7 @@ const line1 = document.querySelector(".line-1")
 const line2 = document.querySelector(".line-2")
 const line3 = document.querySelector(".line-3")
 const e = document.querySelector(".dropbtn")
-
+// ADDING(TOGGLE) ACTIVE CLASS (NAV MENU WILL APPEAR)
 function active() {
   mobileNav.classList.toggle("active")
   line1.classList.toggle("line-1-active")
@@ -41,28 +72,29 @@ function active() {
   line3.classList.toggle("line-3-active")
 
 }
+if (btn) {
+  btn.addEventListener("click", active)
+}
 
-
-
+// REMOVING ACTIVE CLASS (NAV MENU HIDE)
 function removeNav() {
   mobileNav.classList.remove("active")
   line1.classList.remove("line-1-active")
   line2.classList.remove("line-2-active")
   line3.classList.remove("line-3-active")
 
-
-}
-e.addEventListener("click", (e) => {
-  e.stopPropagation()
-})
-
-if (btn) {
-  btn.addEventListener("click", active)
 }
 if (mobileNav) {
   mobileNav.addEventListener("click", removeNav)
 }
+// STOP PROPAGATION FOR TERMELŐI KÁVINK
+e.addEventListener("click", (e) => {
+  e.stopPropagation()
+})
 
+
+
+// INTERSECTION OBSERVER FOR .p-4 PICTURE,WHEN IT APPEARS ON THE PAGE,ANIMATION WILL START
 const ins = document.querySelector(".p-4")
 let observer = new IntersectionObserver((entries) => {
   // Loop over the entries

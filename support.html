@@ -8,6 +8,8 @@
     <meta name="author" content="Gorbai-Benedek kávézója">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="main.js" defer></script>
     <title>Gorbai kávézó</title>
 </head>
 
@@ -15,25 +17,30 @@
     <div class="container-3">
         <div class="header">
 
-            <nav>
+            <nav class="primary">
+                <div class="zero">
+                    <h2>
+                        <a href="index.html">Kávé-világ</a>
+                    </h2>
+                </div>
                 <div class="hamburger">
                     <div class="line-1"></div>
                     <div class="line-2"></div>
                     <div class="line-3"></div>
                 </div>
                 <ul class="navitems">
-                    <li class="zero">
-                        <h2>Kávé-világ</h2>
-                    </li>
+
 
                     <li class="two"><a href="about.html">A kávé eredete</a></li>
 
                     <ul class="dropdown" id="three">
 
-                        <li class="dropbtn"><a href="#">Termelői kávéink<i class="fa fa-caret-down"></i></a></li>
+                        <li class="dropbtn"><button class="onc" id="drpBtn"> <a href="#">Termelői kávéink<i
+                                        class="fa fa-caret-down"></i></a>
+                        </li></button>
 
 
-                        <div class="dropdown-content">
+                        <div class="dropdown-content ">
                             <li id=""><a href="african.html">Afrikai</a></li>
                             <li id=""><a href="#grid-1">Közép-Amerikai</a></li>
                         </div>
@@ -42,6 +49,7 @@
 
                     <li class="four"><a href="intresting-facts.html">Érdekességek</a></li>
                     <li class="five"><a href="contact.html">Kapcsolat</a></li>
+                    <li class="six"><a href="support.html">Támogatás</a></li>
                 </ul>
             </nav>
         </div>
@@ -77,8 +85,8 @@
                     </tr>
                     <tr>
                         <th>1.</th>
-                        <td>Adó 1%-val.
-                        </td>
+                        <th>Adó 1%-val.
+                        </th>
                         <td>
                             <form id="form" action="" method="get">
                                 <label for="vat">Adószám:
@@ -88,19 +96,57 @@
                             </form>
                         </td>
                     </tr>
+                    <tr>
+                        <th>2.</th>
+                        <th>Egyszeri átutalással
+                        </th>
+                        <td>
+                            <form id="form-1" action="" method="get">
+                                <p>Mekkora összeget szeretne adományozni?</p>
+                                <label for="op-1">
+                                    <input type="radio" required id="op-1" name="define-value" value="op-1">
+                                    1000Ft</label>
+
+                                <label for="op-2">
+                                    <input type="radio" id="op-2" name="define-value" value="op-2">
+                                    2000Ft</label>
+
+                                <label for="op-3">
+                                    <input type="radio" id="op-3" name="define-value" value="op-3">
+                                    5000Ft</label>
+                                <label for=" op-4">
+                                    <input type="radio" id="op-4" name="define-value" value="op-4">
+                                    Más összeget szeretnék megadni
+                                </label>
+                                <label for="op-5">
+                                    <input type="number" min="1000" step="1000" name="custom" id="op-5" class="op-5">
+                                </label>
+                                <input id="elkuld" type="submit" value="elküld">
+                            </form>
+                        </td>
+                    </tr>
 
                 </table>
             </div>
         </div>
 
-        <div class="footer">
+        <footer class="footer">
+            <div class="quote">
+                <q>Látszólag csak kávéznak az emberek. De nem. Mert a kávé mellett egymás szemébe néznek, beszélgetnek,
+                    ötletek születnek, barátságok, szerelmek szövődnek. És a falak embertörténetek ezreit szívják
+                    magukba.</q>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook-48.png"
+                                alt=""></a> </li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a> </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt=""></a> </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
-            <q>Látszólag csak kávéznak az emberek. De nem. Mert a kávé mellett egymás szemébe néznek, beszélgetnek,
-                ötletek születnek, barátságok, szerelmek szövődnek. És a falak embertörténetek ezreit szívják
-                magukba.</q>
-        </div>
-    </div>
-    </div>
 </body>
 
 </html>
