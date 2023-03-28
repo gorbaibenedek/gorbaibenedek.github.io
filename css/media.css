@@ -15,8 +15,10 @@
 
     .buy {
         grid-template-columns: 1fr 1fr;
-        grid-area: 2/1/4/5;
-        padding: 20px;
+        grid-area: 1/1/3/5;
+        padding: 10px;
+        position: relative;
+        top: 120px;
     }
 
     .wrapper-0 .buy h2,
@@ -319,9 +321,28 @@
 
     }
 
+    .quote {
+        font-size: 1em;
+        width: 100%;
+
+    }
+
     .footer q {
         font-size: unset;
         margin-bottom: 400px;
+    }
+
+    .social {
+        /* background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555)); */
+        background: linear-gradient(rgba(152, 104, 41, 0.555), rgba(0, 0, 0, 0.468));
+        background-color: rgba(214, 186, 118, 1);
+
+    }
+
+    .footer p {
+        font-size: 0.5em;
+        font-weight: bold;
+
     }
 
     /* *****************ABOUT*************************** */
@@ -381,7 +402,7 @@
     fieldset {
         width: 70%;
         display: block;
-        margin-bottomchoose: 50px;
+        /* margin-bottomchoose: 50px; */
     }
 
     #middle-1 {
@@ -395,9 +416,7 @@
         padding: 90px 0 0 0;
     }
 
-    .footer {
-        margin-top: 60px;
-    }
+
 
 
     /* @media (min-width:600px) {
@@ -486,14 +505,19 @@
         display: flex;
         flex-direction: column;
         margin-inline: 10px;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 10px);
 
     }
 
     #middle-2 {
-        padding-block: 20px;
+
         position: relative;
         top: 30px;
+        padding-block: 20px;
+    }
+
+    #middle-2 h3 {
+        font-size: 10vw;
     }
 
     #middle-2 h2 table,

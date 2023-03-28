@@ -5,7 +5,12 @@ const remove1 = document.querySelector("#op-1")
 const remove2 = document.querySelector("#op-2")
 const remove3 = document.querySelector("#op-3")
 const customA = document.querySelector(".op-5")
+const ToggleCurrency = document.querySelector(".currency")
 const customB = document.querySelector(".op-5-active")
+const currency = document.querySelector(".currency-active")
+
+
+
 
 // ADDING CLICK EVENT TO "MÁS ÖSSZEG"
 if (custom, customA) {
@@ -14,10 +19,12 @@ if (custom, customA) {
 // ADD ACTIVE CLASS==> INPUT FIELD WILL SHOW AND SET THE INPUT FIELD TO REQUIRED
 function addCustom() {
   customA.classList.add("op-5-active")
+  ToggleCurrency.classList.add("currency-active")
   required.required = true
+
 }
 // REMOVE INPUT FIELD IF THE USER DOESNT WANT TO DONATE CUSTOM MONEY(IF CLICKS ON THE FIXED AMOUNTS)
-if (custom, customA) {
+if (custom, customA, ToggleCurrency) {
   // customA.addEventListener("click", removeCustom)
   remove1.addEventListener("click", removeCustom)
   remove2.addEventListener("click", removeCustom)
@@ -26,14 +33,14 @@ if (custom, customA) {
 // SET THE INPUT VALUE TO ZERO(RESETS) IF THE USER CLICKS ON A FIXED AMOUNT OF MONEY AND THE CUSTOM MONEY FIELD WONT BE REQUIRED
 function removeCustom() {
   customA.classList.remove("op-5-active")
+  ToggleCurrency.classList.remove("currency-active")
   let setValueToZero = document.getElementById("op-5")
   setValueToZero.value = "";
   required.required = false
   // customA.classList.add("remove-content")
 
-
-
 }
+
 
 
 
@@ -59,7 +66,7 @@ if (submit) {
   submit.addEventListener("click", () => {
 
     alert(`Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
-  Illetve, ha eddig nem tette, töltse ki a kötlelező mezőket!`)
+Illetve, ha eddig nem tette, töltse ki a kötlelező mezőket!`)
 
   }
   )

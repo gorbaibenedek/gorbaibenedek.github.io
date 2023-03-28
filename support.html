@@ -88,7 +88,7 @@
                         <th>Adó 1%-val.
                         </th>
                         <td>
-                            <form id="form" action="" method="get">
+                            <form id="form" action="" method="">
                                 <label for="vat">Adószám:
                                     <input type="text" name="Adószám" required placeholder="444444-555555-222222"
                                         id="vat">
@@ -101,11 +101,10 @@
                         <th>Egyszeri átutalással
                         </th>
                         <td>
-                            <form id="form-1" action="" method="get">
+                            <form id="form-1" action="" method="">
                                 <p>Mekkora összeget szeretne adományozni?</p>
                                 <label for="op-1">
-                                    <input type="radio" required id="op-1" name="define-value" value="op-1"
-                                        onclick="clearinput()">
+                                    <input type="radio" required id="op-1" name="define-value" value="op-1">
                                     1000Ft</label>
 
                                 <label for="op-2">
@@ -115,14 +114,15 @@
                                 <label for="op-3">
                                     <input type="radio" id="op-3" name="define-value" value="op-3">
                                     5000Ft</label>
-                                <label for=" op-4">
+                                <label for="op-4">
                                     <input type="radio" id="op-4" name="define-value" value="op-4">
                                     Más összeget szeretnék megadni
                                 </label>
                                 <label for="op-5">
-                                    <input type="number" min="1000" step="1000" name="custom" id="op-5" class="op-5">
+                                    <span class="currency"><input type="number" min="1000" step="1000" name="custom"
+                                            id="op-5" class="op-5">Ft</span>
                                 </label>
-                                <input id="elkuld" type="submit" value="elküld">
+                                <input id="elkuld-1" type="submit" value="elküld">
                             </form>
                         </td>
                     </tr>
