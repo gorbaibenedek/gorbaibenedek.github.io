@@ -1,4 +1,4 @@
-@media (max-width:1000px) {
+@media (max-width:1024px) {
 
     /* *******************************INDEX*********************************** */
     * {
@@ -45,7 +45,7 @@
         flex-direction: row;
         /* right: 5px; */
         padding: 10px;
-        height: 60px;
+
         justify-content: space-between;
         align-items: flex-end;
         align-items: center;
@@ -211,10 +211,7 @@
         margin-top: 60px;
     }
 
-    #grid-1 h2,
-    #grid h2 {
-        font-size: 16vw;
-    }
+
 
 
     .dropdown-content-2>ul {
@@ -348,6 +345,7 @@
     /* *****************ABOUT*************************** */
     .wrapper-1 {
         display: block;
+        height: calc(100vh - 60px);
     }
 
 
@@ -402,6 +400,7 @@
     fieldset {
         width: 70%;
         display: block;
+        margin-bottom: 70px;
         /* margin-bottomchoose: 50px; */
     }
 
@@ -493,6 +492,10 @@
 
     }
 
+    .injerto {
+        margin-bottom: 100px;
+    }
+
     .grounded-pic p {
         text-align: center;
     }
@@ -505,7 +508,8 @@
         display: flex;
         flex-direction: column;
         margin-inline: 10px;
-        height: calc(100vh - 10px);
+        /* height: calc(100vh - 10px); */
+        padding-bottom: 90px;
 
     }
 
@@ -528,9 +532,14 @@
         font-size: 4vw;
     }
 
+    #grid-1 h2,
+    #grid h2 {
+        font-size: 16vw;
+    }
+
 }
 
-@media (min-width:600px) and (max-width:1000px) {
+@media (min-width:600px) and (max-width:1024px) {
     .wrapper {
         align-items: center;
     }
@@ -554,5 +563,18 @@
     /* ***************************SUPPORT************************** */
     .wrapper-3 {
         display: block;
+    }
+
+    /* *****************************AFRICAN******************************** */
+    .yirgacheffe img,
+    .sidamo img,
+    .nicaragua img,
+    .injerto img {
+        width: 50%;
+    }
+
+    .african {
+        width: 60%;
+        margin: 0 auto;
     }
 }

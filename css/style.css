@@ -13,6 +13,11 @@ html {
     width: 100%;
 }
 
+
+/* body {
+    min-height: 100vh;
+} */
+
 a {
     text-decoration: none;
 }
@@ -22,6 +27,7 @@ a {
     justify-content: space-between;
     background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555));
     position: fixed;
+    height: 60px;
     z-index: 1;
     top: 0;
     left: 0;
@@ -369,6 +375,7 @@ button:hover li #zero:hover {
 
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/pexels-lukas-942733.jpg);
     background-size: cover;
+
 }
 
 .container-2 {
@@ -405,7 +412,7 @@ button:hover li #zero:hover {
     column-gap: 10px;
 
     display: grid;
-    height: 100vh;
+    min-height: 155vh;
 }
 
 #middle {
@@ -1144,7 +1151,7 @@ th {
     width: 100%;
 }
 
-.footer-0 {
+/* .footer-0 {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1165,13 +1172,13 @@ th {
     font-size: 1.8rem;
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 
 .footer {
 
     position: relative;
-    bottom: 48px;
+    bottom: 60px;
     align-items: center;
     grid-template-columns: ;
     /* grid-template-rows: 1fr 1.3fr; */
@@ -1205,6 +1212,7 @@ th {
 
 .social {
     position: fixed;
+    height: 60px;
     bottom: 0px;
     display: flex;
     background-color: rgb(214, 186, 118);
@@ -1290,13 +1298,15 @@ input[type=radio] {
 
 /* ********************************AFRICAN****************************************  */
 
-.grounded-pic {
+/* .grounded-pic {
     list-style-type: none;
 
-}
+} */
 
 .grounded {
     display: grid;
+
+
 }
 
 
@@ -1311,7 +1321,8 @@ input[type=radio] {
     /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/grounded.jpg)fixed; */
     /* background-image: url(../img/Header.jpg); */
     display: grid;
-
+    /* position: relative;
+    top: 60px; */
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(0, 0, 0);
@@ -1326,7 +1337,7 @@ input[type=radio] {
 
 #grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
 }
 
 #grid h2 {
@@ -1351,7 +1362,7 @@ input[type=radio] {
     font-size: 5rem;
 }
 
-.grounded h2 {}
+
 
 .sidamo p,
 .nicaragua p {
