@@ -811,11 +811,15 @@ button:hover li #zero:hover {
     display: grid;
     grid-area: 1 / 1 / 8 / 9;
     padding: 90px;
+    min-height: 90vh;
 }
 
 #middle-1 {
     display: grid;
-    grid-area: 1/2/2/4;
+    grid-area: 1/1/1/5;
+    width: 50%;
+    margin: 0 auto;
+    width: fit-content;
 
 }
 
@@ -825,11 +829,11 @@ button:hover li #zero:hover {
     justify-content: center;
     display: grid;
     align-items: center;
-    grid-area: 7/2/7/2;
+    grid-area: 1/1/1/1;
     font-family: sans-serif;
     margin: 10px;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3em;
 
 }
 
