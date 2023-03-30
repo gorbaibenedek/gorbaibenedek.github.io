@@ -22,7 +22,10 @@
     }
 
     .container-2 {
-        background-position: bottom;
+        /* background-position: bottom; */
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        background-position-y: bottom;
     }
 
     .wrapper-0 .buy h2,
