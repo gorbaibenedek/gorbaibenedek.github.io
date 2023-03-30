@@ -21,6 +21,10 @@
         top: 120px;
     }
 
+    .container-2 {
+        background-position: bottom;
+    }
+
     .wrapper-0 .buy h2,
     .wrapper-0 .buy a {
         font-size: 10vw;
@@ -510,6 +514,7 @@
         margin-inline: 10px;
         /* height: calc(100vh - 10px); */
         padding-bottom: 90px;
+        min-height: calc(100vh - 60px);
 
     }
 

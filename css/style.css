@@ -381,6 +381,7 @@ button:hover li #zero:hover {
 .container-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-2.jpg);
     background-size: cover;
+    background-position: bottom;
 }
 
 .container-3 {
@@ -409,10 +410,13 @@ button:hover li #zero:hover {
 .wrapper-1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.3fr 0.4fr 0.6fr;
+    /* grid-template-rows: 1fr 0.5fr 1fr; */
+    min-height: 100vh;
     column-gap: 10px;
 
     display: grid;
-    min-height: 155vh;
+
+
 }
 
 #middle {
