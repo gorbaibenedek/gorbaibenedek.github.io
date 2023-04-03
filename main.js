@@ -1,3 +1,19 @@
+
+const flipPic1 = document.querySelector("#qm-1")
+let change = true
+if (flipPic1)
+  flipPic1.addEventListener("click", flipPicAdd1)
+
+function flipPicAdd1() {
+  change = !change
+  if (change) {
+    flipPic1.src = "img/qm-1.jpg"
+  } else {
+    flipPic1.src = "img/qm-1-added.jpg"
+  }
+}
+
+
 // ADDING CONSTS TO SUPPORT HTML
 const custom = document.querySelector("#op-4")
 const required = document.querySelector("#op-5")
@@ -119,6 +135,7 @@ let observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       // Add the animation class
       entry.target.classList.add("anim");
+
     }
   });
 });

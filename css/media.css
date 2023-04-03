@@ -30,7 +30,7 @@
         background-position-x: 30%;
 
 
-        background-attachment: scroll;
+        background-attachment: initial;
 
 
     }
@@ -329,7 +329,7 @@
 
     .footer {
         margin: 0;
-
+        bottom: 60px;
     }
 
     .quote {
@@ -341,12 +341,20 @@
     .footer q {
         font-size: unset;
         margin-bottom: 400px;
+
     }
 
     .social {
         /* background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555)); */
         background: linear-gradient(rgba(152, 104, 41, 0.555), rgba(0, 0, 0, 0.468));
         background-color: rgba(214, 186, 118, 1);
+        position: fixed;
+        height: 60px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
 
     }
 
@@ -359,14 +367,16 @@
     /* *****************ABOUT*************************** */
     .wrapper-1 {
         display: block;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 36px);
+        margin: auto;
+        width: 100%;
     }
 
 
 
 
     #middle {
-        padding-top: 90px;
+        /* padding-top: 90px; */
         margin: 10px;
         text-align: center;
     }
@@ -408,7 +418,7 @@
 
     /* **************************CONTACT*****************  */
     #middle-1 h3 {
-        padding: 20px 0;
+        padding: 5px 0;
     }
 
     fieldset {
@@ -420,13 +430,14 @@
 
     #middle-1 {
         display: block;
-        width: 70%;
+        border-radius: 10px;
         margin: 0 auto;
     }
 
     .wrapper-2 {
         display: block;
         padding: 90px 0 0 0;
+        position: unset;
     }
 
 
@@ -473,7 +484,7 @@
     }
 
 
-    header h1 {
+    .header h1 {
         color: black;
         background-color: inherit;
     }
@@ -559,6 +570,11 @@
         align-items: center;
     }
 
+    /* .wrapper .p-4 .anim {
+
+        width: fit-content;
+    } */
+
     .wrapper h1 {
         width: 50%;
     }
@@ -566,7 +582,7 @@
     .wrapper #p-1,
     .wrapper #p-2,
     .wrapper #p-3,
-    .anim {
+    .wrapper .anim {
         width: 50%;
 
     }
@@ -578,6 +594,8 @@
     /* ***************************SUPPORT************************** */
     .wrapper-3 {
         display: block;
+        padding-inline: 40px;
+        padding-block-end: 90px;
     }
 
     /* *****************************AFRICAN******************************** */
@@ -591,5 +609,11 @@
     .african {
         width: 60%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width:389px) {
+    .footer ul {
+        flex-wrap: wrap;
     }
 }

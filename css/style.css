@@ -224,7 +224,7 @@ ul {
 
 
     background-color: inherit;
-    font-family: inherit;
+    /* font-family: inherit; */
     /* Important for vertical align on mobile phones */
     margin: 0;
     /* Important for vertical align on mobile phones */
@@ -250,6 +250,7 @@ button {
     display: grid;
     font-size: 1.5rem;
     margin: 0;
+    font-family: auto;
     border-radius: 10px;
     border: 3px solid wheat;
     /* background-color: rgb(122, 71, 0); */
@@ -378,18 +379,15 @@ button:hover li #zero:hover {
 
 }
 
-.container-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-2.jpg);
-    background-size: cover;
-    min-height: 100vh;
 
-}
 
 .container-3 {
     background: linear-gradient(rgba(196, 183, 183, 0.217), rgba(232, 223, 223, 0.244)), fixed no-repeat url(../img/support.jpg);
     background-size: cover;
 
 }
+
+
 
 .header {
 
@@ -408,15 +406,23 @@ button:hover li #zero:hover {
 
 
 /* **************************ABOUT HTML********************************************/
+.container-4 {
+    background: linear-gradient(rgba(196, 183, 183, 0.217), rgba(232, 223, 223, 0.244)), fixed no-repeat url(../img/bg-about.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
 .wrapper-1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.3fr 0.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
     /* grid-template-rows: 1fr 0.5fr 1fr; */
-    min-height: 100vh;
-    column-gap: 10px;
+    min-height: 89vh;
+    row-gap: 20px;
 
-    display: grid;
-
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
 
 }
 
@@ -435,15 +441,16 @@ button:hover li #zero:hover {
     align-items: center;
     font-family: sans-serif;
     font-size: 4em;
+    margin-top: 80px;
 }
 
 #spaced-evenly-0 {
     background-color: rgba(61, 41, 8, 0.737);
     display: flex;
     grid-area: 4/2/5/2;
-    box-shadow: 20px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     animation-name: slide;
     animation-duration: 2s;
     position: relative;
@@ -508,9 +515,9 @@ button:hover li #zero:hover {
     background-color: rgba(61, 41, 8, 0.737);
     display: flex;
     grid-area: 4/3/5/3;
-    box-shadow: 20px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     animation-name: slide-1;
     animation-duration: 2s;
     position: relative;
@@ -555,6 +562,31 @@ button:hover li #zero:hover {
         left: 0px;
         top: 0px;
     }
+}
+
+#know {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#know img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#about-centered {
+    background-color: rgb(65, 42, 7);
+    text-align: center;
+    padding-block: 10px;
+    margin-inline: 10px;
+    color: beige;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    row-gap: 0;
 }
 
 /* **************************END***********************************************/
@@ -744,6 +776,22 @@ button:hover li #zero:hover {
 
 }
 
+.p-2-active {
+    background-color: darkolivegreen;
+    background-color: rgb(61, 41, 8);
+    color: beige;
+    border: 2px solid burlywood;
+    grid-area: 6/2/6/2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    opacity: 1;
+    text-align: center;
+}
+
+.togg-active {}
+
 .wrapper #p-2:hover {
     border: 6px solid burlywood;
 
@@ -783,19 +831,23 @@ button:hover li #zero:hover {
 } */
 
 .wrapper .p-4 .anim {
-    margin: 10px;
+
+
+
     background-color: rgb(61, 41, 8);
 }
 
 .p-4 {
     display: flex;
     grid-area: 8/2/8/3;
+    margin: 10px;
 }
 
 .wrapper .anim {
     /* background-color: rgb(162, 121, 56); */
     color: beige;
     border: 2px solid burlywood;
+
     grid-area: 8/2/8/2;
     display: flex;
     flex-wrap: wrap;
@@ -809,19 +861,28 @@ button:hover li #zero:hover {
 
 /* *******************************END****************************************** */
 /* ********************************CONTACT***************************************** */
+.container-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.3)), fixed no-repeat url(../img/bg-contact.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
 .wrapper-2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 0.3fr;
     column-gap: 10px;
     display: grid;
     grid-area: 1 / 1 / 8 / 9;
-    padding: 90px;
+    padding-top: 90px;
+    top: 90px;
+    position: relative;
     min-height: 90vh;
 }
 
 #middle-1 {
     display: grid;
-    grid-area: 1/1/1/5;
+    grid-area: 1/2/1/5;
     width: 50%;
     margin: 0 auto;
     width: fit-content;
@@ -844,7 +905,7 @@ button:hover li #zero:hover {
 
 .form {
     display: grid;
-    grid-area: 2/2/2/4;
+    grid-area: 2/3/2/4;
 }
 
 fieldset {
@@ -1087,7 +1148,8 @@ input[type=submit]:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     column-gap: 10px;
-    padding: 90px;
+    padding-top: 90px;
+    padding-inline: 20px;
     display: grid;
     /* height:100vh; */
 }
@@ -1141,7 +1203,7 @@ td {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#elkuld {
+#send {
     display: inline;
 }
 
@@ -1187,7 +1249,7 @@ th {
 .footer {
 
     position: relative;
-    bottom: 60px;
+    /* bottom: 60px; */
     align-items: center;
     grid-template-columns: ;
     /* grid-template-rows: 1fr 1.3fr; */
@@ -1206,7 +1268,7 @@ th {
 .footer ul {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+
 }
 
 .quote {
@@ -1214,20 +1276,16 @@ th {
     background-color: rgb(61, 41, 8);
     font-weight: 900;
     font-size: 1.3rem;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding-inline: 20px;
 
 }
 
 .social {
-    position: fixed;
-    height: 60px;
-    bottom: 0px;
-    display: flex;
+
     background-color: rgb(214, 186, 118);
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
+
 }
 
 .social ul {
