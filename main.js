@@ -1,15 +1,40 @@
 
 const flipPic1 = document.querySelector("#qm-1")
+const flipPic2 = document.querySelector("#qm-2")
+const flipPic3 = document.querySelector("#qm-3")
+
 let change = true
+let change1 = true
+let change2 = true
+
 if (flipPic1)
   flipPic1.addEventListener("click", flipPicAdd1)
-
+if (flipPic2)
+  flipPic2.addEventListener("click", flipPicAdd2)
+if (flipPic3)
+  flipPic3.addEventListener("click", flipPicAdd3)
 function flipPicAdd1() {
   change = !change
   if (change) {
     flipPic1.src = "img/qm-1.jpg"
   } else {
     flipPic1.src = "img/qm-1-added.jpg"
+  }
+}
+function flipPicAdd2() {
+  change1 = !change1
+  if (change1) {
+    flipPic2.src = "img/qm-2.jpg"
+  } else {
+    flipPic2.src = "img/qm-2-added.jpg"
+  }
+}
+function flipPicAdd3() {
+  change2 = !change2
+  if (change2) {
+    flipPic3.src = "img/qm-3.jpg"
+  } else {
+    flipPic3.src = "img/qm-3-added.jpg"
   }
 }
 
@@ -82,7 +107,7 @@ if (submit) {
   submit.addEventListener("click", () => {
 
     alert(`Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
-Illetve, ha eddig nem tette, töltse ki a kötlelező mezőket!`)
+Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!`)
 
   }
   )

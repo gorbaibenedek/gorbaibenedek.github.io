@@ -14,9 +14,6 @@ html {
 }
 
 
-/* body {
-    min-height: 100vh;
-} */
 
 a {
     text-decoration: none;
@@ -25,7 +22,8 @@ a {
 .primary {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(152, 104, 41, 0.555));
+
+    background: linear-gradient(rgb(152 104 41), rgba(214, 186, 118, 1));
     position: fixed;
     height: 60px;
     z-index: 1;
@@ -117,15 +115,9 @@ ul {
     grid-column: 8/8;
 }
 
-.one,
-.two li,
-.three li,
-.four li,
-.five {
-    /* background-color: antiquewhite; */
-}
 
-.navitems li {}
+
+
 
 .dropdown .dropbtn {
 
@@ -152,10 +144,7 @@ ul {
 }
 
 
-/* .dropdown-content:hover {
-    display: flex;
-    position: sticky;
-} */
+
 
 .dropdown-content a {
     display: block;
@@ -165,19 +154,7 @@ ul {
 
 }
 
-.dropdown-content a:hover {
-    /* background-color: #ffffff; */
-}
 
-
-/* .dropdown:hover .dropdown-content {
-    display: block;
-
-} */
-
-/* #mobile-nav:hover span#b:hover {
-    display: none;
-} */
 
 #mobile-nav:hover span#b {
     transition-delay: 1s;
@@ -333,16 +310,6 @@ button:hover li #zero:hover {
 
 }
 
-/* li>a:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
-
-
-    transition: 0.4s linear;
-    animation-name: up;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-
-} */
 
 
 
@@ -565,16 +532,18 @@ button:hover li #zero:hover {
 }
 
 #know {
-    margin: 10px;
+    margin-inline: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+
 }
 
 #know img {
     width: 100%;
     border-radius: 10px;
-    padding: 5px;
+    padding-inline: 5px;
+    padding-block: 3px;
 
 }
 
@@ -988,6 +957,12 @@ input[type=button]:hover {
     color: black;
     font-size: 1.5em;
 }
+
+#fav::after {
+    content: "*";
+    color: rgb(255, 0, 0);
+}
+
 
 #datas {
     /* display: flex; */
