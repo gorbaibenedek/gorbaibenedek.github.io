@@ -77,7 +77,7 @@
         top: 60px;
         align-items: center;
         justify-content: start;
-        padding-block: 200px;
+        padding-block: 50px;
         gap: 1rem;
         transition: all 0.3s ease;
     }
