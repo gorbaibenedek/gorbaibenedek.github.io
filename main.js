@@ -1,7 +1,11 @@
-
+// TOGGLE IMG SRC'-s FOR ABOUT.HTML
 const flipPic1 = document.querySelector("#qm-1")
 const flipPic2 = document.querySelector("#qm-2")
 const flipPic3 = document.querySelector("#qm-3")
+
+const advertisement = document.querySelector(".hidden-message-active")
+const advertisementHidden = document.querySelector(".hidden-message")
+
 
 let change = true
 let change1 = true
@@ -19,6 +23,7 @@ function flipPicAdd1() {
     flipPic1.src = "img/qm-1.jpg"
   } else {
     flipPic1.src = "img/qm-1-added.jpg"
+    advertisementHidden.classList.add("hidden-message-active")
   }
 }
 function flipPicAdd2() {
@@ -27,6 +32,8 @@ function flipPicAdd2() {
     flipPic2.src = "img/qm-2.jpg"
   } else {
     flipPic2.src = "img/qm-2-added.jpg"
+    advertisementHidden.classList.add("hidden-message-active")
+
   }
 }
 function flipPicAdd3() {
@@ -35,8 +42,16 @@ function flipPicAdd3() {
     flipPic3.src = "img/qm-3.jpg"
   } else {
     flipPic3.src = "img/qm-3-added.jpg"
+    advertisementHidden.classList.add("hidden-message-active")
   }
 }
+
+
+
+
+
+
+
 
 
 // ADDING CONSTS TO SUPPORT HTML
@@ -149,7 +164,14 @@ e.addEventListener("click", (e) => {
   e.stopPropagation()
 })
 
-
+const CentralAfrican = document.querySelector("#central-american")
+if (CentralAfrican) {
+  CentralAfrican.addEventListener("click", removeCentral)
+}
+function removeCentral() {
+  NavbtnNone.classList.remove("dropdown-content-active")
+  NavbtnNone.classList.add("dropdown-content")
+}
 
 // INTERSECTION OBSERVER FOR .p-4 PICTURE,WHEN IT APPEARS ON THE PAGE,ANIMATION WILL START
 const ins = document.querySelector(".p-4")

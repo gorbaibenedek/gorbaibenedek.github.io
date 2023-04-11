@@ -43,7 +43,7 @@
     .primary ul {
         display: flex;
         gap: 10px;
-        justify-content: space-between;
+
         flex-direction: column;
         width: 100%;
     }
@@ -67,18 +67,17 @@
     }
 
     .navitems {
-        /* display: none; */
+
         flex-direction: column;
         position: absolute;
         background-color: rgb(65, 38, 14);
         color: #fff;
-        width: 100%;
-        padding-block: 15vh;
+        height: calc(100vh - 120px);
         left: -150%;
         top: 60px;
         align-items: center;
-        justify-content: center;
-        /* background-color: rgba(214, 186, 118, 1); */
+        justify-content: start;
+        padding-block: 50px;
         gap: 1rem;
         transition: all 0.3s ease;
     }
@@ -100,10 +99,12 @@
 
     .onc {
         padding: 0;
+        border: unset;
     }
 
     .active {
         left: 0;
+
     }
 
 
@@ -121,19 +122,13 @@
         background-color: unset;
     }
 
-    /* .dropdown .dropbtn.dropdown-content:hover {
-        display: block;
-    } */
 
-    /* .dropdown:hover .dropdown-content {
-        display: block;
 
-    } */
     .dropdown-content-active {
         position: relative;
-        bottom: 13px;
-        border: 3px solid wheat;
-        padding: 10px;
+
+
+
         gap: 0.5rem;
         border-radius: 10px;
     }
@@ -142,6 +137,8 @@
         position: relative;
         display: flex;
         width: max-content;
+        border: 3px groove;
+
     }
 
     .four {
@@ -177,16 +174,6 @@
         align-self: ;
         background-color: rgb(213, 206, 163);
     }
-
-    /* #mobile-nav {
-        display: flex;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 11111;
-    } */
-
-    .dropdown-21 {}
 
     .dropdown-content-2 li a {
         border: 2px solid rgb(74, 48, 14);
@@ -287,6 +274,7 @@
 
 
 
+
     .dropdown-content-2 li a:hover {
         transform: scale3d(1.1, 1.1, 1.1);
 
@@ -373,8 +361,28 @@
         padding-bottom: 60px;
     }
 
+    .creator {
+        position: fixed;
+        font-weight: 900;
+        display: flex;
+        bottom: 100px;
+        flex-direction: column;
+        background-color: rgb(173, 102, 9);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        padding: 5px;
 
+        border: 2px groove burlywood;
+    }
 
+    #about-centered {
+        margin-bottom: 5px;
+    }
+
+    .hidden-message {
+        margin-block: 5px;
+
+    }
 
     #middle {
         /* padding-top: 90px; */
@@ -555,7 +563,7 @@
     th,
     td,
     tr {
-        padding: 2px;
+        padding-inline: 2px;
         font-size: 4vw;
     }
 
