@@ -72,12 +72,12 @@
         position: absolute;
         background-color: rgb(65, 38, 14);
         color: #fff;
-        height: calc(100vh - 120px);
+        min-height: calc(100vh - 60px);
         left: -150%;
         top: 60px;
         align-items: center;
         justify-content: start;
-        padding-block: 50px;
+        padding-block: 200px;
         gap: 1rem;
         transition: all 0.3s ease;
     }
