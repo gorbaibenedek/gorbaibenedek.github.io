@@ -346,6 +346,10 @@
 
     }
 
+    .social img {
+        width: 50%;
+    }
+
     .footer p {
         font-size: 0.5em;
         font-weight: bold;
@@ -528,6 +532,10 @@
 
     .injerto {
         margin-bottom: 100px;
+    }
+
+    .grounded-pic {
+        width: 100%;
     }
 
     .grounded-pic p {
