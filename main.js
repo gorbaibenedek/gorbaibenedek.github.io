@@ -121,8 +121,9 @@ let submit = document.querySelector("#sub")
 if (submit) {
   submit.addEventListener("click", () => {
 
-    alert(`Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
-Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!`)
+    alert(`1.Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
+2.Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!
+3.Amennyiben Ön kerül kiválasztásra, E-mailben megkeressük!`)
 
   }
   )
