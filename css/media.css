@@ -361,7 +361,9 @@
         width: 100%;
         margin: 0 auto;
 
+
     }
+
 
     /* .social img {
         width: 50%;
@@ -681,8 +683,13 @@
     }
 }
 
-@media (max-width:389px) {
+@media (max-width:380px) {
     .footer ul {
         flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .social ul {
+        gap: 0rem;
     }
 }
