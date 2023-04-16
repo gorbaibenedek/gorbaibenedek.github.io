@@ -65,7 +65,20 @@ const ToggleCurrency = document.querySelector(".currency")
 const customB = document.querySelector(".op-5-active")
 const currency = document.querySelector(".currency-active")
 
+const formSupport = document.querySelector('#form-1');
+const formContact = document.querySelector('#form-2');
 
+// ADDING ONSUBMITS IF THE FORM IS SUBMITTED (FOR BOTH FORMS)
+if (formSupport) {
+  formSupport.onsubmit = function () {
+    alert("Köszönjük a támogatását,adatok feldolgozásra kerültek.")
+  };
+}
+if (formContact) {
+  formContact.onsubmit = function () {
+    alert("Köszönjük a támogatását,adatok feldolgozásra kerültek.")
+  };
+}
 
 
 // ADDING CLICK EVENT TO "MÁS ÖSSZEG"
@@ -97,13 +110,14 @@ function removeCustom() {
 
 }
 
-
-
-
 // NAVIGATION MENU BUTTON
 const navBtn = document.querySelector(".dropdown-content-active")
 const NavbtnNone = document.querySelector(".dropdown-content")
 const buttOn = document.querySelector(".onc")
+const changeButtonDown = document.querySelector(".fa fa-caret-down")
+const changeButtonUp = document.querySelector(".fa fa-caret-up")
+const changeButtonFaFa = document.querySelector("#font-awesome")
+
 
 
 
@@ -113,21 +127,34 @@ if (buttOn) {
 function navActive() {
   NavbtnNone.classList.toggle("dropdown-content-active")
   NavbtnNone.classList.toggle("dropdown-content")
+  changeButtonFaFa.classList.toggle("fa-caret-down")
+  changeButtonFaFa.classList.toggle("fa-caret-up")
   // NavbtnNone.classList.remove("dropdown-content")
 }
 
 // ADDITIONAL INFOS FOR REGISTRATION
 let submit = document.querySelector("#sub")
+
+function showAlert() {
+  const alertBox = document.getElementById('alert-box');
+  alertBox.style.display = 'block';
+}
+
+function hideAlert() {
+  const alertBox = document.getElementById('alert-box');
+  alertBox.style.display = 'none';
+}
+
 if (submit) {
   submit.addEventListener("click", () => {
-
-    alert(`1.Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
-2.Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!
-3.Amennyiben Ön kerül kiválasztásra, E-mailben megkeressük!`)
-
+    showAlert()
+    //     alert(`1.Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
+    // 2.Amennyiben Ön kerül kiválasztásra, E-mailben megkeressük!
+    // 3.Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!`)
   }
   )
 }
+
 // HAMBURGER MENU ADDED
 const btn = document.querySelector(".hamburger")
 const mobileNav = document.querySelector(".navitems")
@@ -207,10 +234,12 @@ if (ins) {
 // }
 // window.addEventListener('resize', widthChangeCallback);
 // widthChangeCallback();
-const toggleBtn = document.querySelector("#tap");
-const myDiv = document.querySelector(".dropdown-content-2 ");
-const myButtnA = document.querySelector("#a");
-const myButtnB = document.querySelector("#b");
+// const toggleBtn = document.querySelector("#tap");
+// const myDiv
+// const myButtnA = document.querySelector("#a");
+// const myButtnB = document.querySelector("#b");
+
+
 
 
 // toggleBtn.addEventListener("click", () => {

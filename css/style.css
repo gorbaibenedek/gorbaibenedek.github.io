@@ -530,10 +530,11 @@ button:hover li #zero:hover {
 /* **************************INDEX**************************** */
 .wrapper-0 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 10px;
     display: grid;
-    height: 100vh;
+    min-height: 83vh;
+    /* height: 100vh; */
 }
 
 .wrapper-0 h1 {
@@ -561,15 +562,15 @@ button:hover li #zero:hover {
 .wrapper-0 .buy h2 {
     display: grid;
     /* grid-area: 1/2/3/3; */
-    font-size: 3vw;
+    font-size: 3em;
     background-color: rgba(61, 41, 8, 0.863);
     color: beige;
     padding: 20px;
-    border-left: 5px solid rgb(232, 152, 47);
+    /* border-left: 5px solid rgb(232, 152, 47);
     border-top: 5px solid rgb(232, 152, 47);
     border-right: 3px solid rgb(232, 152, 47);
-    border-bottom: 3px solid rgb(232, 152, 47);
-
+    border-bottom: 3px solid rgb(232, 152, 47); */
+    border: 3px solid darkorange;
 }
 
 .wrapper-0 .buy a {
@@ -593,10 +594,10 @@ button:hover li #zero:hover {
     width: 100%;
     object-fit: cover;
     grid-area: 1/3/3/2;
-    border-top: 5px solid rgb(232, 152, 47);
-    border-right: 5px solid rgb(232, 152, 47);
-    border-bottom: 5px solid rgb(232, 152, 47);
-
+    border-top: 3px solid darkorange;
+    border-right: 3px solid darkorange;
+    border-bottom: 3px solid darkorange;
+    /* border: 3px 3px 3px 0 solid darkorange; */
 }
 
 .wrapper-0 .buy #farmer-2 {
@@ -606,9 +607,9 @@ button:hover li #zero:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-left: 5px solid rgb(232, 152, 47);
-    border-bottom: 5px solid rgb(232, 152, 47);
-    border-right: 5px solid rgb(232, 152, 47);
+    border-left: 3px solid darkorange;
+    border-bottom: 3px solid darkorange;
+    border-right: 3px solid darkorange;
 }
 
 
@@ -887,8 +888,32 @@ input[type=submit] {
     display: flex;
     padding: 5px;
     margin: 0 auto;
-
+    border: 2px solid sienna;
+    background-color: blanchedalmond;
     justify-content: center;
+    font-weight: bolder;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+
+    }
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: blanchedalmond;
+    animation-iteration-count: 1;
+    animation-name: shake;
+    animation-duration: .4s;
+    position: relative;
+    transition: 0.4s linear;
 }
 
 .infos input[type=button] {
@@ -905,6 +930,7 @@ input[type=submit] {
 
 
 }
+
 
 .infos {
     display: flex;
@@ -1001,69 +1027,50 @@ input[type=submit] {
     align-items: flex-end;
 }
 
-fieldset:hover {
-    animation-name: formy;
-    animation-duration: 3.5s;
-    position: relative;
+#alert-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px 20px 0 20px;
+
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-
-    }
+.close {
+    margin: 10px auto;
+    display: flex;
+    padding: 5px;
+    border: 2px solid sienna;
+    background-color: blanchedalmond;
+    justify-content: center;
+    font-weight: bolder;
 }
 
-input[type=submit]:hover {
-    animation: shake 1s;
-    animation-iteration-count: infinite;
-    animation-name: shake;
-    animation-duration: 2s;
-    position: relative;
-    transform: scaley(5);
+#numb-list {
+    display: flex;
+    align-items: baseline;
+}
 
-    transition: 0.4s linear;
+#numb-list li {
+    font-size: 16px;
+    display: list-item;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 5px;
+    list-style-image: url(../img/icons8-coffee-24.png);
+    list-style-position: inside;
+
+}
+
+.close:hover {
+    color: blanchedalmond;
+    background-color: black;
 }
 
 /* *******************************END****************************************** */
