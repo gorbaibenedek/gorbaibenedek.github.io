@@ -69,7 +69,7 @@
 
             </div>
             <div class="form">
-                <form id="form-2" action="" method="">
+                <form id="form-2" action="" method="post">
                     <fieldset>
                         <legend>Regisztráció a kávé-világhoz </legend>
 
@@ -87,7 +87,8 @@
                                 <input type="email" name="email" id="email" required placeholder="someone@redmail.com"
                                     minlength="10"></label>
                             <label for="tel">Telefonszám:
-                                <input type="tel" name="tel" id="tel" required placeholder="125-222-2332"></label>
+                                <input type="tel" name="tel" id="tel" required placeholder="125-222-2332"
+                                    pattern="[0-9]{6,10}"></label>
                             <label for="password">Jelszó:
                                 <input type="password" name="jelszo" id="password" placeholder="***********"
                                     required></label>

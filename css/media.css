@@ -40,10 +40,7 @@
 
     .container-4 {
         background-position: right;
-
-
         background-repeat: no-repeat;
-
         background-attachment: scroll;
     }
 
@@ -377,6 +374,8 @@
     }
 
     /* *****************ABOUT*************************** */
+
+
     .wrapper-1 {
         display: block;
         min-height: 96vh;
@@ -586,12 +585,8 @@
     }
 
     .wrapper-0 {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 96vh;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        column-gap: 10px;
-        display: grid;
-
-        height: 100vh;
     }
 
     #middle-2 {

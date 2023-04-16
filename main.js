@@ -71,12 +71,12 @@ const formContact = document.querySelector('#form-2');
 // ADDING ONSUBMITS IF THE FORM IS SUBMITTED (FOR BOTH FORMS)
 if (formSupport) {
   formSupport.onsubmit = function () {
-    alert("Köszönjük a támogatását,adatok feldolgozásra kerültek.")
+    alert("Köszönjük a támogatását, adatok feldolgozásra kerültek.")
   };
 }
 if (formContact) {
   formContact.onsubmit = function () {
-    alert("Köszönjük a támogatását,adatok feldolgozásra kerültek.")
+    alert("Köszönjük regisztrációját, adatok feldolgozásra kerültek.")
   };
 }
 
