@@ -21,18 +21,30 @@
         top: 120px;
     }
 
-    .container-2 {
+    .container-2,
+    .container-3 {
         /* background-position: bottom; */
         background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        background-attachment: initial;
+    }
+
+    .container-1 {
+
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        background-attachment: initial;
+    }
+
+    .container-4 {
+        background-position: right;
 
 
         background-repeat: no-repeat;
-        background-position-x: 30%;
 
-
-        background-attachment: initial;
-
-
+        background-attachment: scroll;
     }
 
     .wrapper-0 .buy h2,
