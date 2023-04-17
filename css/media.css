@@ -54,6 +54,9 @@
     .container-4 {
         position: absolute;
         background: none;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 100%;
     }
 
     .wrapper-0 .buy h2,
