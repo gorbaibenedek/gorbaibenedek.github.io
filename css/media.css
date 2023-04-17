@@ -707,7 +707,7 @@
     }
 }
 
-@media (max-width:373px) {
+@media (max-width:350px) {
     .footer ul {
         flex-wrap: wrap;
         gap: 0;
@@ -728,14 +728,6 @@
         font-size: 5vw;
     }
 
-    .footer ul {
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    .social img {
-        width: 80%;
-    }
 
     .social li a {
         display: grid;
