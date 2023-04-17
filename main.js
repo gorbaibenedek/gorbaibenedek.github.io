@@ -144,10 +144,12 @@ function hideAlert() {
   const alertBox = document.getElementById('alert-box');
   alertBox.style.display = 'none';
 }
+const blurred = document.querySelector(".container-2")
 
 if (submit) {
   submit.addEventListener("click", () => {
     showAlert()
+
     //     alert(`1.Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
     // 2.Amennyiben Ön kerül kiválasztásra, E-mailben megkeressük!
     // 3.Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!`)
@@ -211,14 +213,18 @@ let observer = new IntersectionObserver((entries) => {
       // Add the animation class
       entry.target.classList.add("anim");
 
+
     }
   });
+}, {
+  threshold: 0.5
 });
 
 
 if (ins) {
-  if (window.innerWidth < 600)
+  if (window.innerWidth < 1024)
     observer.observe(document.querySelector(".p-4"));
+
 
 }
 
