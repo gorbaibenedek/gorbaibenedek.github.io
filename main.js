@@ -129,7 +129,6 @@ function navActive() {
   NavbtnNone.classList.toggle("dropdown-content")
   changeButtonFaFa.classList.toggle("fa-caret-down")
   changeButtonFaFa.classList.toggle("fa-caret-up")
-  // NavbtnNone.classList.remove("dropdown-content")
 }
 
 // ADDITIONAL INFOS FOR REGISTRATION
@@ -149,12 +148,7 @@ const blurred = document.querySelector(".container-2")
 if (submit) {
   submit.addEventListener("click", () => {
     showAlert()
-
-    //     alert(`1.Válassza ki kedvenc kávéját,hogy részt vehessen sorsolásunkon!
-    // 2.Amennyiben Ön kerül kiválasztásra, E-mailben megkeressük!
-    // 3.Illetve, ha eddig nem tette, töltse ki a kötelező mezőket!`)
-  }
-  )
+  })
 }
 
 // HAMBURGER MENU ADDED
@@ -227,62 +221,3 @@ if (ins) {
 
 
 }
-
-
-
-// function widthChangeCallback() {
-//   if (window.innerWidth < 600) {
-//     observer.observe(document.querySelector(".anim"));
-//   } else {
-
-//     observer.unobserve(document.querySelector(".anim"));
-//   }
-// }
-// window.addEventListener('resize', widthChangeCallback);
-// widthChangeCallback();
-// const toggleBtn = document.querySelector("#tap");
-// const myDiv
-// const myButtnA = document.querySelector("#a");
-// const myButtnB = document.querySelector("#b");
-
-
-
-
-// toggleBtn.addEventListener("click", () => {
-//   if (myDiv.style.display === "none") {
-
-//     myDiv.style.display = "block"
-//     myDiv.style.padding = "100px 0"
-//     toggleBtn.style.padding = "10px"
-//     toggleBtn.innerHTML = `<a><i class="fa fa-close"></i></a>`
-
-//     // myButtnB.style.display = "block"
-
-
-//   } else {
-
-//     myDiv.style.display = "none"
-
-//     toggleBtn.innerHTML = `<a><i
-//       class="fa fa-bars"></i></a>`
-
-//     // myDiv.style.display = "none"
-//   }
-// })
-
-
-// let observer = new IntersectionObserver((entries, o) => {
-//   console.log(o === observer)
-//   // Loop over the entries
-//   entries.forEach((entry) => {
-//     // If the element is visible
-//     if (entry.isIntersecting) {
-//       // Add the animation class
-//       entry.target.classList.add("anim");
-//       observer.observe(document.querySelector(".p-4"));
-
-//     }
-
-//   });
-
-// });

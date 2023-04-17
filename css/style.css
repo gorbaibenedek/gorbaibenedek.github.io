@@ -275,6 +275,10 @@ ul {
     opacity: 1;
 }
 
+#right {
+    margin-right: 0.5rem;
+}
+
 /* *********************************CREATOR OF THE PAGE SECTION***************************** */
 .creator {
     display: none;
@@ -336,7 +340,7 @@ ul {
     background-color: rgba(61, 41, 8, 0.737);
     box-shadow: 5px 5px 5px 5px;
     border-radius: 10px;
-    margin: 0 10px;
+    margin-inline: 10px;
     animation-name: slide;
     animation-duration: 2s;
     position: relative;
@@ -394,6 +398,7 @@ ul {
     animation-name: slide-1;
     animation-duration: 2s;
     position: relative;
+    margin-inline: 10px;
 
 
 }
