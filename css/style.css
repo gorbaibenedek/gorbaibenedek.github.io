@@ -175,6 +175,48 @@ ul {
     }
 }
 
+.added {
+    display: block;
+}
+
+.removed {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.line-1-active {
+    transform: rotate(-45deg) translateY(8px);
+
+
+}
+
+.line-2-active {
+    display: none;
+}
+
+.line-3-active {
+    transform: rotate(45deg) translateY(-8px);
+
+
+
+}
+
 /* *******************************************************FOOTER********************************************* */
 .footer {
     position: relative;
@@ -262,7 +304,7 @@ ul {
 .container-4 {
     background: linear-gradient(rgba(196, 183, 183, 0.217), rgba(232, 223, 223, 0.244)), fixed no-repeat url(../img/bg-about.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: right
 }
 
 .wrapper-1 {
@@ -904,11 +946,13 @@ input[type=submit]:hover {
     font-size: 4vw;
 }
 
+
 table,
 th,
 tr,
 td {
-    border: 1px solid rgb(48, 29, 5);
+    border: 3px ridge;
+
     border-collapse: collapse;
     padding: 20px;
     background-color: rgba(222, 184, 135, 0.427);
@@ -916,6 +960,14 @@ td {
 
 td {
     text-align: center;
+}
+
+.coffee-bg {
+    /* background: url(../img/th-coffee.jpg); */
+
+    background: linear-gradient(rgba(0, 0, 0, 0.117), rgba(119, 76, 20, 0.544)), url(../img/th-coffee.jpg);
+    color: beige;
+    font-style: italic;
 }
 
 #tax {
@@ -1052,15 +1104,11 @@ input[type=radio] {
 }
 
 .grounded h2 {
-
-
-
     border-radius: 20px 20px 0 0;
     /* background-color: rgba(1, 0, 0, 0.6); */
     padding: 30px;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 
@@ -1075,8 +1123,6 @@ input[type=radio] {
     color: beige;
     margin: 10px;
 }
-
-
 
 .sidamo p,
 .nicaragua p {
@@ -1100,9 +1146,7 @@ input[type=radio] {
 .yirgacheffe img,
 .injerto img {
     grid-area: 1/2/2/2;
-
 }
-
 
 .yirgacheffe p,
 .injerto p {
@@ -1122,43 +1166,4 @@ input[type=radio] {
     border-radius: 10px;
     border: 4px solid rgb(26, 18, 11);
 
-}
-
-
-.added {
-    display: block;
-}
-
-.removed {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-
-    gap: 8px;
-}
-
-.line-1,
-.line-2,
-.line-3 {
-    width: 40px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-.line-1-active {
-    transform: rotate(-45deg) translateY(8px);
-}
-
-.line-2-active {
-    display: none;
-}
-
-.line-3-active {
-    transform: rotate(45deg) translateY(-8px);
 }

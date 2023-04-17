@@ -21,6 +21,10 @@
         top: 120px;
     }
 
+    .container {
+        background-attachment: scroll;
+    }
+
     .container-2,
     .container-3 {
         /* background-position: bottom; */
