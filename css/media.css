@@ -167,7 +167,7 @@
     #three {
         position: relative;
         display: flex;
-        width: max-content;
+        width: fit-content;
         border: 3px groove whitesmoke;
 
     }
