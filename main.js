@@ -127,8 +127,8 @@ if (buttOn) {
 function navActive() {
   NavbtnNone.classList.toggle("dropdown-content-active")
   NavbtnNone.classList.toggle("dropdown-content")
-  // changeButtonFaFa.classList.toggle("fa-caret-down")
-  // changeButtonFaFa.classList.toggle("fa-caret-up")
+  changeButtonFaFa.classList.toggle("fa-caret-down")
+  changeButtonFaFa.classList.toggle("fa-caret-up")
 }
 
 // ADDITIONAL INFOS FOR REGISTRATION
