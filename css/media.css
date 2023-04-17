@@ -48,10 +48,10 @@
         background-size: cover;
         overflow: hidden;
         position: absolute;
-        top: 0.5px;
+        top: 0px;
         left: 0;
         right: 0;
-        bottom: 0.5px;
+        bottom: 0px;
         overflow-x: hidden;
         /* or any other value */
         overflow-y: auto;
@@ -450,7 +450,7 @@
     }
 
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 5px;
     }
 
     /* Track */
@@ -466,7 +466,7 @@
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: #6c5816;
     }
 
 
