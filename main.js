@@ -80,7 +80,6 @@ if (formContact) {
   };
 }
 
-
 // ADDING CLICK EVENT TO "MÁS ÖSSZEG"
 if (custom, customA) {
   custom.addEventListener("click", addCustom)
