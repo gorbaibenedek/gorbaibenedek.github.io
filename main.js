@@ -118,8 +118,6 @@ const changeButtonUp = document.querySelector(".fa fa-caret-up")
 const changeButtonFaFa = document.querySelector("#font-awesome")
 
 
-
-
 if (buttOn) {
   buttOn.addEventListener("click", navActive)
 }
@@ -194,6 +192,9 @@ if (CentralAfrican) {
 function removeCentral() {
   NavbtnNone.classList.remove("dropdown-content-active")
   NavbtnNone.classList.add("dropdown-content")
+  changeButtonFaFa.classList.toggle("fa-caret-down")
+  changeButtonFaFa.classList.toggle("fa-caret-up")
+
 }
 
 // INTERSECTION OBSERVER FOR .p-4 PICTURE,WHEN IT APPEARS ON THE PAGE,ANIMATION WILL START
@@ -218,5 +219,28 @@ if (ins) {
   if (window.innerWidth < 1024)
     observer.observe(document.querySelector(".p-4"));
 
+}
+
+
+const headerCim = document.querySelector(".zero1")
+const headerCimHidden = document.querySelector(".zero-active")
+const addImg1 = document.querySelector(".page-img")
+const addImg = document.querySelector(".page-img-active")
+
+if (headerCim) {
+  headerCim.addEventListener("click", addingImg)
+
+}
+function addingImg() {
+  addImg1.classList.toggle("page-img-active")
+  headerCim.classList.toggle("zero-active")
+
+}
+function delayed(event) {
+  event.preventDefault(); // prevent the default link behavior
+  setTimeout(function () {
+
+    window.location.href = event.target.href // add index.html to href
+  }, 800); // 1000 milliseconds (1 second) delay
 
 }

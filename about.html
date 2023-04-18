@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="coffee-favicon.ico" type="image/x-icon">
     <script src="main.js" defer></script>
-    <title>Gorbai kávézó</title>
+    <title>Kávé-világ</title>
 </head>
 
 <body>
@@ -21,8 +22,9 @@
             <nav class="primary">
                 <div class="zero">
                     <h1>
-                        <a href="index.html">Kávé-világ</a>
+                        <a class="zero1" href="index.html" onclick="delayed(event)">Kávé-világ
                     </h1>
+                    <img class="page-img" src="img/icons8-coffee-pot-48.png" alt=""></a>
                 </div>
                 <div class="hamburger">
                     <div class="line-1"></div>
@@ -31,14 +33,15 @@
                 </div>
                 <ul class="navitems">
 
-
                     <li class="two"><a href="about.html">A kávé eredete</a></li>
 
                     <ul class="dropdown" id="three">
 
-                        <li class="dropbtn"><button class="onc" id="drpBtn"> <a id="prev" href="#">Termelői kávéink<i
-                                        id="font-awesome" class="fa fa-caret-down"></i></a>
-                        </li></button>
+                        <li class="dropbtn">
+                            <button class="onc" id="drpBtn"> <a id="prev" href="#">Termelői kávéink<i id="font-awesome"
+                                        class="fa fa-caret-down"></i></a>
+                        </li>
+                        </button>
 
 
                         <div class="dropdown-content ">
@@ -61,18 +64,10 @@
             </nav>
         </header>
 
-
-
-
-
-        <!-- <div class="fixed">
-           
-        </div> -->
-        <div class="wrapper-1">
+        <main class="wrapper-1">
 
             <div id="middle">
                 <h2>Tudtad?</h2>
-
             </div>
             <div id="spaced-evenly-0">
                 <details class="option">
@@ -121,7 +116,7 @@
                 <h2>Te is szeretnéd megismerni újdonságaink? A termelői kávéink fülnél megteheted!</h2>
             </div>
 
-        </div>
+        </main>
         <footer class="footer">
             <div class="quote">
                 <q>A kávézás egy olyan tevékenység, amely minden érzékszervünket kielégíti. Az íze, az illata, a
@@ -131,7 +126,7 @@
 
             <div class="social">
 
-                <ul id="footer">
+                <ul id="social-footer">
                     <p>Lépj kapcsolatba velünk az alábbi közösségi médiákon.</p>
                     <li><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png"
                                 alt="facebook logo"></a> </li>
