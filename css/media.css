@@ -146,6 +146,10 @@
 
     .dropdown {
         display: flex;
+    }
+
+    .dropdown li {
+        display: flex;
         flex-direction: column;
         align-content: center;
         flex-wrap: wrap;
