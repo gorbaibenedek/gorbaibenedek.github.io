@@ -61,12 +61,14 @@
         font-size: 10vw;
     }
 
-    .primary ul {
+    .primary .navitems {
         display: flex;
         gap: 10px;
         flex-direction: column;
         width: 100%;
     }
+
+
 
     .primary {
         /* width: max-content; */
@@ -133,6 +135,10 @@
         width: 100%;
     }
 
+    #prev {
+        display: grid;
+    }
+
     .active {
         left: 0;
     }
@@ -166,6 +172,7 @@
         display: flex;
         width: fit-content;
         border: 3px groove whitesmoke;
+        gap: 0.5rem;
 
     }
 

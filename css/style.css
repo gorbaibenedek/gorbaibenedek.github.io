@@ -173,6 +173,17 @@ ul {
     background-color: rgb(122, 71, 0);
 }
 
+#prev {
+
+    margin: 0px;
+    gap: 0;
+    background-color: rgb(122, 71, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .two a:hover,
 .dropdown-content-active a:hover,
 .four a:hover,

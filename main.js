@@ -48,9 +48,9 @@ function flipPicAdd3() {
 
 // preventdefault for termelői kávéink
 
-document.querySelector('#prev').addEventListener('click', function (prevStop) {
-  prevStop.preventDefault();
-});
+// document.querySelector('#prev').addEventListener('click', function (prevStop) {
+//   prevStop.preventDefault();
+// });
 
 
 
