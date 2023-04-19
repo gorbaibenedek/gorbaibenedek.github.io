@@ -612,7 +612,7 @@ ul {
 
 /* **************************INTERESTING FACTS**************************** */
 .container-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/pexels-lukas-942733.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-intr-facts-and-african.jpg);
     background-size: cover;
 }
 
@@ -709,11 +709,6 @@ ul {
     /* min-height: 100vh; */
 }
 
-.container-2-blur {
-    background: linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.3)), no-repeat url(../img/bg-contact.jpg);
-    background-size: cover;
-
-}
 
 .wrapper-2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1102,7 +1097,7 @@ input[type=radio] {
 
 /* ********************************AFRICAN****************************************  */
 .container-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/pexels-lukas-942733.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-intr-facts-and-african.jpg);
     background-size: cover;
 }
 
