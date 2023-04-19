@@ -46,13 +46,6 @@ function flipPicAdd3() {
   }
 }
 
-// preventdefault for termelői kávéink
-
-// document.querySelector('#prev').addEventListener('click', function (prevStop) {
-//   prevStop.preventDefault();
-// });
-
-
 
 // ADDING CONSTS TO SUPPORT HTML
 const custom = document.querySelector("#op-4")
@@ -93,7 +86,6 @@ function addCustom() {
 }
 // REMOVE INPUT FIELD IF THE USER DOESNT WANT TO DONATE CUSTOM MONEY(IF CLICKS ON THE FIXED AMOUNTS)
 if (custom, customA, ToggleCurrency) {
-  // customA.addEventListener("click", removeCustom)
   remove1.addEventListener("click", removeCustom)
   remove2.addEventListener("click", removeCustom)
   remove3.addEventListener("click", removeCustom)
@@ -105,7 +97,6 @@ function removeCustom() {
   let setValueToZero = document.getElementById("op-5")
   setValueToZero.value = "";
   required.required = false
-  // customA.classList.add("remove-content")
 
 }
 
@@ -211,6 +202,7 @@ let observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
+  // Adding threshold to intersection observer, if the person will see 50% from the selected img the animation will start.
   threshold: 0.5
 });
 
@@ -221,7 +213,7 @@ if (ins) {
 
 }
 
-
+// ADDING SOME ANIMATIONS TO PAGE TITLE
 const headerCim = document.querySelector(".zero1")
 const headerCimHidden = document.querySelector(".zero-active")
 const addImg1 = document.querySelector(".page-img")
@@ -240,7 +232,7 @@ function delayed(event) {
   event.preventDefault(); // prevent the default link behavior
   setTimeout(function () {
 
-    window.location.href = event.target.href // add index.html to href
-  }, 800); // 1000 milliseconds (1 second) delay
+    window.location.href = event.target.href
+  }, 800); // the target link will open after 800ms
 
 }

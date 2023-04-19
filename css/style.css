@@ -100,7 +100,7 @@ ul {
 
 }
 
-#three {
+.three {
     animation: none;
     display: block;
     grid-row: 1/1;

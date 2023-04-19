@@ -149,6 +149,7 @@
         flex-direction: column;
         align-content: center;
         flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
     .dropdown-content-active li {
@@ -167,7 +168,7 @@
         border-radius: 10px;
     }
 
-    #three {
+    .three {
         position: relative;
         display: flex;
         width: fit-content;
@@ -194,12 +195,6 @@
     .dropdown-content a {
         display: flex;
         flex-direction: column;
-    }
-
-    .dropdown-content-2 li a {
-        border: 2px solid rgb(74, 48, 14);
-        border-radius: 10px;
-
     }
 
     .hamburger {
@@ -237,14 +232,14 @@
         }
     }
 
-    #one,
+    /* #one,
     #two,
     #three,
     #four,
     #five {
         padding: 0;
         justify-content: start;
-    }
+    } */
 
     .three {
         display: block;
