@@ -250,6 +250,11 @@
         grid-row: 1/1;
     }
 
+    .fav {
+        margin: 0;
+        width: 100%;
+    }
+
     /* *******************-INTERESTING FACTS******************* */
     .wrapper {
         display: flex;
@@ -539,9 +544,7 @@
 
 }
 
-.fav {
-    width: 80%;
-}
+
 
 @media (min-width:600px) and (max-width:1024px) {
     .footer p {
