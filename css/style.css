@@ -570,6 +570,7 @@ ul {
     margin: 10px 0;
     text-decoration: none;
     font-size: 1.5vw;
+    font-style: italic;
 
 }
 
@@ -822,32 +823,45 @@ input[type=submit]:hover {
     padding-inline: 5px;
 }
 
-.infos input[type=button]:hover {
+#sub:hover {
     color: rgb(57, 49, 8);
     background: white;
+    cursor: pointer;
 }
 
 
 .infos {
     margin: 10px auto;
-    border: 1px groove;
+
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
 
-.infos::before {
+#sub::before {
     content: "*";
     display: flex;
-    flex-direction: row;
-    background-color: rgb(57, 49, 8);
+    flex-direction: column;
     color: rgb(255, 0, 0);
+    font-size: 2em;
 }
 
-.infos::before:hover {
-    color: rgb(57, 49, 8);
-    background: white;
+
+#sub {
+    display: flex;
+    color: white;
+    background-color: rgb(57, 49, 8);
+    border: unset;
+    padding-inline: 5px;
+    font-size: 16px;
+    padding: 4px;
+    font-weight: 100;
+    font-style: italic;
+    align-items: center;
+    width: 90%;
+    border: 1px groove;
 }
+
 
 .accept {
     grid-area: 2/1/2/3;
@@ -856,6 +870,7 @@ input[type=submit]:hover {
 #fav {
     color: black;
     font-size: 1.5em;
+
 }
 
 .submit {
@@ -884,6 +899,7 @@ input[type=submit]:hover {
     margin: 0 30px;
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 #choose {
