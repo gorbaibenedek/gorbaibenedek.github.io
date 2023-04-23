@@ -185,6 +185,13 @@ function removeCentral() {
   NavbtnNone.classList.add("dropdown-content")
   changeButtonFaFa.classList.toggle("fa-caret-down")
   changeButtonFaFa.classList.toggle("fa-caret-up")
+  // mobileNav.classList.remove("active")
+  // line1.classList.remove("line-1-active")
+  // line2.classList.remove("line-2-active")
+  // line3.classList.remove("line-3-active")
+  removeNav()
+
+
 
 }
 
