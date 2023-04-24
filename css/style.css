@@ -284,6 +284,7 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding-inline: 20px;
+    padding-top: 5px;
 }
 
 .social {
@@ -541,7 +542,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
-
+    margin-top: 70px;
     grid-area: 3/3/4/5;
 }
 
@@ -778,11 +779,17 @@ ul {
     padding: 5px 0;
     width: max-content;
     margin: 0 auto;
+
 }
 
-#form input {
+.form input {
+    /* padding: 5px; */
+    border-radius: 5px;
     padding: 5px;
+    background-color: rgb(230, 217, 202);
+
 }
+
 
 input[type=submit] {
     display: flex;
@@ -884,14 +891,17 @@ input[type=submit]:hover {
     color: rgb(255, 0, 0);
 }
 
+#datas {}
+
 #datas label {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: min-content;
     margin: 10px auto;
-    border: 2px solid rgb(61, 45, 7);
+    /* border: 2px solid rgb(61, 45, 7); */
     padding: 1px;
+
 }
 
 
@@ -1000,15 +1010,27 @@ table,
 th,
 tr,
 td {
-    border: 3px ridge;
-
+    /* border: 3px ridge; */
+    border: 1px solid saddlebrown;
     border-collapse: collapse;
     padding: 20px;
     background-color: rgba(222, 184, 135, 0.427);
 }
 
+table {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
 td {
     text-align: center;
+}
+
+tr {}
+
+th {
+    font-size: 1.7em;
+
 }
 
 .coffee-bg {
@@ -1047,9 +1069,7 @@ td {
     display: inline;
 }
 
-th {
-    font-size: 1.7em;
-}
+
 
 .support {
     display: grid;

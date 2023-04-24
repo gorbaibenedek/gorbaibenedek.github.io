@@ -148,6 +148,9 @@ const line1 = document.querySelector(".line-1")
 const line2 = document.querySelector(".line-2")
 const line3 = document.querySelector(".line-3")
 const e = document.querySelector(".dropbtn")
+if (btn) {
+  btn.addEventListener("click", active)
+}
 // ADDING(TOGGLE) ACTIVE CLASS (NAV MENU WILL APPEAR)
 function active() {
   mobileNav.classList.toggle("active")
@@ -155,9 +158,6 @@ function active() {
   line2.classList.toggle("line-2-active")
   line3.classList.toggle("line-3-active")
 
-}
-if (btn) {
-  btn.addEventListener("click", active)
 }
 
 // REMOVING ACTIVE CLASS (NAV MENU HIDE)
@@ -171,7 +171,7 @@ function removeNav() {
 if (mobileNav) {
   mobileNav.addEventListener("click", removeNav)
 }
-// STOP PROPAGATION FOR TERMELŐI KÁVINK
+// STOP PROPAGATION FOR TERMELŐI KÁVÉINK
 e.addEventListener("click", (e) => {
   e.stopPropagation()
 })
@@ -190,8 +190,6 @@ function removeCentral() {
   // line2.classList.remove("line-2-active")
   // line3.classList.remove("line-3-active")
   removeNav()
-
-
 
 }
 

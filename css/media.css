@@ -255,7 +255,7 @@
         width: 100%;
     }
 
-    /* *******************-INTERESTING FACTS******************* */
+    /* *******************INTERESTING FACTS******************* */
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -286,7 +286,7 @@
     .quote {
         font-size: 1em;
         width: 100%;
-
+        padding-top: 5px;
     }
 
     .footer q {
@@ -514,8 +514,8 @@
     }
 
     .wrapper-0 {
-        height: 96vh;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /* height: 96vh; */
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     #middle-2 {
@@ -556,6 +556,7 @@
         display: grid;
         width: 50%;
         margin: 0 auto;
+        margin-top: 0;
     }
 
     .wrapper-0 .buy h2,
