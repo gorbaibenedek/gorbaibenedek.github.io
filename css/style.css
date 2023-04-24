@@ -535,7 +535,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
-    min-height: 83vh;
+    min-height: 84vh;
 }
 
 .buy {
