@@ -1,3 +1,4 @@
+/* ***************************FOR ALL HTML PAGES***************************************** */
 * {
     margin: 0;
     padding: 0;
@@ -612,6 +613,7 @@ ul {
     transition: 0.4s linear;
 }
 
+/* *******************************END****************************************** */
 /* **************************INTERESTING FACTS**************************** */
 .container-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-intr-facts-and-african.jpg);
@@ -1131,6 +1133,7 @@ input[type=radio] {
     left: 0;
 }
 
+/* *******************************END****************************************** */
 /* ********************************AFRICAN****************************************  */
 .container-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0)), fixed no-repeat url(../img/bg-intr-facts-and-african.jpg);
