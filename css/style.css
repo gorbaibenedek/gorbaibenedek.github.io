@@ -150,7 +150,11 @@ ul {
     background-color: rgb(60, 42, 33);
     position: absolute;
     border-radius: 10px;
+    padding-inline: 4px;
+
 }
+
+
 
 .dropdown-content-active li {
 
@@ -369,7 +373,7 @@ ul {
     color: beige;
     justify-content: center;
     display: grid;
-    border-radius: 10px;
+
     align-items: center;
     font-family: sans-serif;
     font-size: 4em;
@@ -566,13 +570,15 @@ ul {
     grid-area: 3/1/4/3;
     justify-content: center;
     padding: 20px 0;
-    border: 7px solid rgb(67, 57, 25);
+    border: 4px solid rgb(67, 57, 25);
     background-color: rgb(61, 41, 15);
     color: beige;
     margin: 10px 0;
     text-decoration: none;
     font-size: 1.5vw;
     font-style: italic;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -599,6 +605,8 @@ ul {
 .wrapper-0 .buy a:hover {
     background-color: blanchedalmond;
     color: black;
+
+    transition: all 1s ease-in-out;
 }
 
 #shakey:hover {
@@ -801,6 +809,7 @@ input[type=submit] {
     background-color: blanchedalmond;
     justify-content: center;
     font-weight: bolder;
+    border-radius: 5px;
 
 }
 
@@ -893,7 +902,7 @@ input[type=submit]:hover {
     color: rgb(255, 0, 0);
 }
 
-#datas {}
+
 
 #datas label {
     display: flex;
@@ -907,7 +916,7 @@ input[type=submit]:hover {
 }
 
 
-.fav {
+.fav-form {
     margin: 0 30px;
     display: flex;
     flex-direction: column;
@@ -1013,7 +1022,7 @@ th,
 tr,
 td {
     /* border: 3px ridge; */
-    border: 1px solid saddlebrown;
+    border: 3px outset lightgoldenrodyellow;
     border-collapse: collapse;
     padding: 20px;
     background-color: rgba(222, 184, 135, 0.427);
@@ -1027,8 +1036,6 @@ table {
 td {
     text-align: center;
 }
-
-tr {}
 
 th {
     font-size: 1.7em;
@@ -1236,6 +1243,8 @@ input[type=radio] {
     margin: 10px 10px;
     padding: 10px;
     border-radius: 10px;
-    border: 4px solid rgb(26, 18, 11);
+    /* border: 4px solid rgb(26, 18, 11); */
+    box-shadow: rgba(50, 50, 105, 0.75) 0px 2px 5px 0px, rgba(0, 0, 0, 0.55) 0px 1px 1px 0px;
+
 
 }

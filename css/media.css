@@ -1,6 +1,6 @@
 @media (max-width:1024px) {
 
-    /* *******************************INDEX*********************************** */
+
     /* **************************FOR ALL HTML PAGES****************************** */
     * {
         margin: 0;
@@ -32,55 +32,6 @@
 
     .creator-desktop {
         display: none;
-    }
-
-    .buy {
-        grid-template-columns: 1fr 1fr;
-        grid-area: 1/1/3/5;
-        padding: 10px;
-        position: relative;
-        top: 120px;
-        margin-top: 0;
-    }
-
-    .container {
-        background-attachment: scroll;
-    }
-
-    .container-2,
-    .container-3 {
-        /* background-position: bottom; */
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position-x: 30%;
-        background-attachment: initial;
-    }
-
-    .container-1 {
-
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position-x: 30%;
-        background-attachment: initial;
-    }
-
-    .container-4 {
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    .wrapper-0 .buy h2,
-    .wrapper-0 .buy a {
-        font-size: 10vw;
     }
 
     .primary .navitems {
@@ -132,6 +83,25 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.6em;
 
+    }
+
+    .three {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        border: 3px groove whitesmoke;
+        gap: 0.5rem;
+        display: block;
+        grid-row: 1/1;
+
+    }
+
+    .four {
+        display: inline-flex;
+    }
+
+    .five {
+        display: block;
     }
 
 
@@ -194,22 +164,7 @@
         border-radius: 10px;
     }
 
-    .three {
-        position: relative;
-        display: flex;
-        width: fit-content;
-        border: 3px groove whitesmoke;
-        gap: 0.5rem;
 
-    }
-
-    .four {
-        display: inline-flex;
-    }
-
-    .five {
-        display: block;
-    }
 
     .dropdown-content {
         display: none;
@@ -230,68 +185,19 @@
 
     }
 
-    .header>li h2 {
+    /* .header>li h2 {
         display: block;
-    }
+    } */
 
     #grid {
         display: block;
         margin-top: 60px;
     }
 
-    button {
+    /* button {
         display: block;
 
-    }
-
-    @keyframes navig {
-        0% {
-            position: relative;
-            background-color: aquamarine;
-            top: 10px;
-        }
-
-        100% {
-            background-color: brown;
-            position: relative;
-            top: 300px;
-        }
-    }
-
-    .three {
-        display: block;
-        grid-row: 1/1;
-    }
-
-    .fav {
-        margin: 0;
-        width: 100%;
-    }
-
-    /* *******************INTERESTING FACTS******************* */
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        padding: 90px 20px;
-    }
-
-    @keyframes left-shift {
-
-        0% {
-            position: relative;
-            left: -600px;
-        }
-
-        100% {
-            position: relative;
-            left: 0;
-        }
-    }
-
-    .wrapper h3 {
-        padding: 20px 0;
-    }
-
+    } */
     .footer {
         bottom: 60px;
     }
@@ -326,6 +232,77 @@
         font-size: 0.55em;
         font-weight: bold;
 
+    }
+
+    /* *******************************INDEX*********************************** */
+    .container {
+        background-attachment: scroll;
+    }
+
+    .buy {
+        grid-template-columns: 1fr 1fr;
+        grid-area: 1/1/3/5;
+        padding: 10px;
+        position: relative;
+        top: 120px;
+        margin-top: 0;
+    }
+
+    .container-1,
+    .container-2,
+    .container-3 {
+        /* background-position: bottom; */
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        background-attachment: scroll;
+    }
+
+    .container-4 {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .wrapper-0 .buy h2,
+    .wrapper-0 .buy a {
+        font-size: 10vw;
+    }
+
+    .wrapper-0 .buy a {
+        padding-block: 7px;
+    }
+
+    /* *******************INTERESTING FACTS******************* */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 90px 20px;
+    }
+
+    @keyframes left-shift {
+
+        0% {
+            position: relative;
+            left: -600px;
+        }
+
+        100% {
+            position: relative;
+            left: 0;
+        }
+    }
+
+    .wrapper h3 {
+        padding: 20px 0;
     }
 
     /* *****************ABOUT*************************** */
@@ -394,6 +371,7 @@
     /* **************************CONTACT*****************  */
     #middle-1 h2 {
         padding: 5px 0;
+        font-size: 2em;
     }
 
     #registration {
@@ -401,6 +379,11 @@
         display: block;
         margin-bottom: 70px;
         /* margin-bottomchoose: 50px; */
+    }
+
+    .fav-form {
+        margin: 0;
+        width: 100%;
     }
 
     #middle-1 {
@@ -481,9 +464,9 @@
 
     }
 
-    .injerto {
+    /* .injerto {
         margin-bottom: 100px;
-    }
+    } */
 
     .grounded-pic {
         width: 100%;
@@ -503,10 +486,11 @@
         margin-inline: 10px;
         /* height: calc(100vh - 10px); */
         padding-bottom: 90px;
-        min-height: calc(100vh - 60px);
+        /* min-height: calc(100vh - 60px); */
 
     }
 
+    /* ********************************INDEX********************************** */
     .wrapper-0 {
         /* height: 96vh; */
         grid-template-rows: 1fr 1fr 1fr;
@@ -548,14 +532,25 @@
     /* ******************INDEX***************************** */
     .buy {
         display: grid;
-        width: 50%;
+        /* width: 70%; */
         margin: 0 auto;
-        margin-top: 0;
+        margin-top: -40px;
+        grid-area: 2/1/3/5;
+    }
+
+    table {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #middle-2 h2 {
+        width: 70%;
+        margin: 10px auto;
     }
 
     .wrapper-0 .buy h2,
     .wrapper-0 .buy a {
-        font-size: 1.8em;
+        font-size: 2.8em;
 
     }
 
@@ -568,8 +563,10 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         column-gap: 10px;
         display: grid;
-
-        height: 100vh;
+        height: 121vh;
+        width: 60%;
+        grid-area: 2;
+        margin: 0 auto;
     }
 
 
@@ -599,7 +596,7 @@
     /* ********************************CONTACT*********************************************** */
 
     .wrapper-2 {
-        min-height: 86vh;
+        min-height: 92vh;
     }
 
     #registration {
